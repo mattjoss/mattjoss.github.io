@@ -1,0 +1,216 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Instaview Help</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="../css/instaviewHelpStyle.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body id='all'>
+
+  <div id="container">
+    <header>
+		<div id="headerDiv"> 
+			<ul id="navbar">
+				<li>
+					<a href="http://www.roguesheep.com" title="Home">
+						<span id='navbar-sheep' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="../products.html" title="Products">
+						<span id='navbar-products' class='navBarItem navbar-selected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="../support.html" title="Support">
+						<span id='navbar-support' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.roguesheep.com" title="Blog">
+						<span id='navbar-blog' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+			</ul>
+			<a href="http://www.roguesheep.com" title="Home">
+				<img id="RSBanner" src="https://s3.amazonaws.com/RogueSheepComMedia/RogueSheepLogo_small.png"/>			
+			</a>
+		</div>
+    </header>
+    
+    <div id="main">
+		<div id='contentArea'>
+			<h1 class='HelpPageTitle'>Instaview Help</h1>
+			<div class='HelpPageContent'>
+			<br/>
+				<h2>Getting Started</h2>
+				
+				<p>An Instagram account is required to use Instaview.  Go to <a href="http://instagram.com">http://instagram.com</a> to find out how to create one.  (At the time of this writing, this can only be done through the iPhone Instagram app, but it is likely there will be other ways in the future.)</p>
+				
+				<p>After you launch Instaview you are presented with the login interface.  If for some reason you don't have a window showing, choose Stream > New to create a window.  If you are not logged in, the Username and Password fields will be presented to allow you to log in.  Enter your Instagram account credentials and click the "Login" button.   RogueSheep's Instaview <a href="./privacypolicy.html">privacy policy</a> can also be viewed by clicking the link at the bottom of the login dialog.</p>
+				
+				
+				<h2>Choosing a Stream</h2>
+				
+				<p>The first window you create will by default show photos from your feed (My Feed:  Recent photos submitted by users that you follow).  There are many different types of stream a window can display.  To change the stream a window is showing, choose the Stream > Change menu item.  This will present a dialog which will allow you to change to one of the many stream types.  Alternatively, you can choose Stream > New to create a new stream window.  The streams available are as follows:</p>
+				
+				<p><b>My Feed:</b>  This stream shows recent photos from Instagram users that you follow.</p>
+				
+				<p><b>My Photos:</b>  This stream shows your recent photos.</p>
+				
+				<p><b>My Liked:</b>  This stream shows photos you have liked recently.</p>
+				
+				<p><b>Popular:</b>  This stream shows recent well-liked photos from all Instagram users.</p>
+				
+				<p><b>Location:</b>  There are two types of location feeds available.  You can choose from amongst the 25+ locations we have created to instantly start seeing geotagged photos from a geographical area in the world.  Alternatively, you can create a custom geographical area stream by choosing Custom and then entering the latitude and longitude and a radius up to five kilometers.</p>
+				
+				<p><b>User:</b>  This stream shows photos submitted by a specific Instagram user.  As you type into the search box, results will appear in the table below.  Make sure the user whose photos you'd like to see is selected and hit OK to start viewing that user's stream.</p>
+				
+				<p><b>Tag:</b>  This stream shows photos that have been tagged (either in the caption or their own comments) with a given tag by the user who submitted the photo.  As you type into the search box, results will appear in the table below, sorted by the number of photos with the searched-for tag.  Make sure the tag you'd like to see is selected and hit OK to start viewing a stream of photos with that tag.</p>
+				
+				
+				<h2>Working With the Overlay and Popovers</h2>
+				
+				<p>By default, each window will show an overlay when you move your mouse over the image portion of the window (it will not display when you mouse over the frame).  The overlay has two parts, the top and bottom.  The bottom overlay always shows the name of the photo's contributor, the caption, how long ago the photo was submitted, the location (if one exists) and the number of likers and comments.  The photo's owner's image will also appear if the window is not too small.  The top overlay will always show the name of the stream, the index of the current photo and the number of photos in the stream, where possible.  Note that for streams which have an extremely large number of photos, each photo will just show the index of the photo in the stream.  If the window is the active window, the top overlay will also show the navigation controls and the slideshow on/off control.  By default, pushing the down arrow key will toggle the overlay of window at the mouse location or the active window (if the mouse is not over an Instaview window). The overlay behavior can be configured in the application preferences (See Customizing Your Experience, below).</p>
+				
+				
+				<h3>Top Overlay</h3>
+				
+				<p><b>Slideshow ON/OFF:</b>  This button allows you to turn the slideshow on and off for that window.  Slideshow options are covered more fully in the "Setting Up a Slideshow" section, below.  The keyboard shortcut 'S' is available in addition to this button.</p>
+				
+				<p><b>Stream navigation:</b>  On the right side of the top overlay are left and right arrow icons which can be clicked on to navigate through a stream.  For most streams, left will take you back to older submissions and right to newer submissions.  The left and right arrow keys are available to navigate through the stream using the keyboard.</p>
+				
+				
+				<h3>Bottom Overlay</h3>
+				
+				<p><b>Name / Profile Photo:</b>  Clicking on the user's name or profile photo will bring up the User popover, which shows more information about the user as well as provides a way to start following that user or create a new stream with their photos.  Option-U is available as a keyboard shortcut for this action.  The User popover shows the following information:  Nickname, profile picture, name, number of followers, number of people the user follows and number of photos.  The Follow/Unfollow button allows you to start or stop following this user.  Clicking on the number of followers or the number of people this user follows will switch the popover to show a list of these other users.  Clicking the View button will create a new window with the stream of this user's photos. </p>
+				
+				<p><b>Location:</b>  If the photo was given a specific named location, you can click on the location to create a new window showing a stream of photos from that named location.</p>
+				
+				<p><b>Likers:</b> Clicking on the heart icon in the overlay will bring up the Likers popover, which shows the list of people who have liked this photo.  Option-L is available as a keyboard shortcut for this action.  Click the Like/Unlike button to add or remove yourself as a liker of the photo.  You can also click on a profile picture to show the User popover for that liker.  Note:  You can also simply press 'L' to like a photo without bringing up the popover.</p>
+				
+				<p><b>Comments:</b>  Clicking on the 'speech bubble' icon will bring up the Comments popover, which shows the comments on the photo in chronological order, starting with the contributor's caption.  Option-C is available as a keyboard shortcut for this action.  Click the Comment button to add your own comment on the photo.  While you are editing your comment, if you click on another commenter it will automatically insert an '@' and the commenters name so you can easily direct your comments to other commenters.  Click Cancel if you change your mind about adding a comment or Post to submit your comment.</p>
+				
+				
+				<h2>Photo Frames</h2>
+				
+				<p>There are 10 frames to choose from or the option to have no frame at all around each window's photo.  Four of the frames show user name, caption, how long ago the photo was submitted and photo location.  Six other frame styles (and "no frame") conserve screen space by showing no information.</p>
+				
+				
+				<h2>Setting Up a Slideshow</h2>
+				
+				<p>When the slideshow is turned on, images will automatically start changing in the window for which it is turned on.  Each window can either be showing a slideshow or not, allowing you to either manually navigate a stream or just have it going in the background.  Note that when a slideshow is turned off, you will be automatically returned to the most recent or 'right' end of the photo stream.  By default, slideshows will change out their image every 10 seconds and randomly choose an available picture as the next slide.  To configure this to your taste for a given stream, choose the Stream > Slideshow Preferences menu item.  In this dialog you can modify features of the slideshow:</p>
+				
+				<p><b>Slide duration:</b>  You can set the slides to be shown for 5 seconds, 10 seconds, 30 seconds, 2 minutes or 10 minutes each.</p>
+				
+				<p><b>Slide choice style:</b>  You can decide whether you'd like to just see completely random slides (which might happen to mean seeing one slide more often than another) or if you'd rather, see each slide in turn.  If you choose Random, you can elect to give extra weight to photos you've liked or to more recent photos.  If you choose Each, you can choose to either see the photos chronologically or in a shuffled order.</p>
+				
+				
+				<h2>Customizing Your Experience</h2>
+				
+				<p>In the Application Preferences dialog, you can further customize aspects of your Instaview experience:</p>
+				
+				<p><b>Stream Refresh:</b>  By default, windows will retrieve new photos, if available, every 15 minutes.  You can configure this to be more or less often.  Note that you can explicitly force a specific window to refresh by choosing the Stream > Refresh menu item or by pushing the 'R' key.</p>
+				
+				<p><b>Frame Highlight:</b>  The active window will by default show a solid gold box around it.  You can change this to be any color you desire, with any transparency you wish, even choosing to make it completely invisible if so desired.</p>
+				
+				<p><b>Overlay Based on Mouse Position:</b>  By default, when you move the mouse over a window the overlay will appear and when you move away it will disappear.  Unchecking this option means that no matter where your mouse is the overlay will neither hide nor show as you change the mouse position.  NOTE:  When this is off, toggling the overlay via the menu item or a keyboard shortcut will no longer act on the window the mouse is over, but always on the active window.</p>
+				
+				<p><b>Double-Click behavior:</b>  By default, double-clicking on the photo will show the photo at full size in a new Quicklook-like window.  You can change the behavior of double-click to either a) mark the photo as one you like or b) show/hide the overlay.  Note that irrespective of this preference, the spacebar is always available to Quicklook the photo at full size.</p>
+				
+				<p><b>Unviewed Photo Tracking:</b>  By default, windows which show the My Feed stream will show a small 'scrap of paper' control in the bottom right corner of the photo area which shows when new photos are available.  This scrap of paper can be clicked on to jump to the oldest of these new photos regardless of the photo you are currently viewing in the stream at present.  The unviewed photo tracking preference allows you to either turn this feature off completely or make it so the My Feed, Location, User and Tag streams all show the unviewed scrap of paper control.  Furthermore, dock badging can be turned on so that the Instaview icon in the dock will show the total number of all unviewed photos you are currently tracking. </p>
+				
+				
+				<h2>Et Cetera</h2>
+				
+				<p>Finally, here are a few more tidbits available in Instaview:</p>
+				
+				<p><b>Save:</b> If you'd like to save a photo you are viewing choose the Photo > Save As… menu item.  You will be prompted to choose a name and destination for the photo.</p>
+				
+				<p><b>Logout:</b>  If you'd like to logout, you can simply choose Instaview > Logout and your credentials will be cleared and all Instaview windows will be closed.  You can then log in as another user or re-log in with the same credentials.  Windows positions and the streams they are showing are persisted on a user by user basis, so you will immediately be able to enjoy your own personal setup when you log back in.</p>
+				
+				<p><b>Copy URL:</b>  Instaview allows you to create a URL representing a stream you have created that you can then paste and share with other Instaview users.  This works for most streams, with notable exceptions being My Feed, My Photos, My Liked and Popular, as they represent different photos for different users.</p>
+				
+				<p><b>Window sizes:</b>  As a convenience, Command-1, Command-2 and Command-3 are available to quickly show the active window at a small (204 x 204), medium (306 x 306) or large (612 x 612: full resolution) size, respectively.</p>
+			</div> <!-- privacypolicy -->
+
+		</div> <!-- contentArea -->
+    </div>
+    
+    <footer id='footer'>
+		<a href='http://roguesheep.com'>Home</a>
+		<a href='http://twitter.com/roguesheep'>RogueSheep on Twitter</a>
+		<a href='../support.html'>Support</a>
+		
+		<a href='http://roguesheep.com'>&copy; 2011 RogueSheep Incorporated</a>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <!-- end concatenated and minified scripts-->
+  
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+  <!-- yui profiler and profileviewer - remove for production -->
+  <!-- end profiling code -->
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-360947-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>

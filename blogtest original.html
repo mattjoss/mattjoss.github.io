@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Inside RogueSheep  </title>
+<meta name="generator" content="WordPress abc" /> 
+<link rel="stylesheet" href="http://blog.roguesheep.com/wp-content/themes/black-letterhead/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.roguesheep.com/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.roguesheep.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://blog.roguesheep.com/feed/atom/" />
+<link rel="pingback" href="http://blog.roguesheep.com/xmlrpc.php" />
+	<link rel='archives' title='January 2011' href='http://blog.roguesheep.com/2011/01/' />
+	<link rel='archives' title='December 2010' href='http://blog.roguesheep.com/2010/12/' />
+	<link rel='archives' title='October 2010' href='http://blog.roguesheep.com/2010/10/' />
+	<link rel='archives' title='September 2010' href='http://blog.roguesheep.com/2010/09/' />
+	<link rel='archives' title='July 2010' href='http://blog.roguesheep.com/2010/07/' />
+	<link rel='archives' title='May 2010' href='http://blog.roguesheep.com/2010/05/' />
+	<link rel='archives' title='March 2010' href='http://blog.roguesheep.com/2010/03/' />
+	<link rel='archives' title='February 2010' href='http://blog.roguesheep.com/2010/02/' />
+	<link rel='archives' title='January 2010' href='http://blog.roguesheep.com/2010/01/' />
+	<link rel='archives' title='December 2009' href='http://blog.roguesheep.com/2009/12/' />
+	<link rel='archives' title='November 2009' href='http://blog.roguesheep.com/2009/11/' />
+	<link rel='archives' title='October 2009' href='http://blog.roguesheep.com/2009/10/' />
+	<link rel='archives' title='September 2009' href='http://blog.roguesheep.com/2009/09/' />
+	<link rel='archives' title='July 2009' href='http://blog.roguesheep.com/2009/07/' />
+	<link rel='archives' title='June 2009' href='http://blog.roguesheep.com/2009/06/' />
+	<link rel='archives' title='May 2009' href='http://blog.roguesheep.com/2009/05/' />
+	<link rel='archives' title='March 2009' href='http://blog.roguesheep.com/2009/03/' />
+	<link rel='archives' title='November 2008' href='http://blog.roguesheep.com/2008/11/' />
+	<link rel='archives' title='October 2008' href='http://blog.roguesheep.com/2008/10/' />
+	<link rel='archives' title='August 2008' href='http://blog.roguesheep.com/2008/08/' />
+	<link rel='archives' title='June 2008' href='http://blog.roguesheep.com/2008/06/' />
+	<link rel='archives' title='April 2008' href='http://blog.roguesheep.com/2008/04/' />
+	<link rel='archives' title='March 2008' href='http://blog.roguesheep.com/2008/03/' />
+	<link rel='archives' title='February 2008' href='http://blog.roguesheep.com/2008/02/' />
+	<link rel='archives' title='January 2008' href='http://blog.roguesheep.com/2008/01/' />
+	<link rel='archives' title='December 2007' href='http://blog.roguesheep.com/2007/12/' />
+	<link rel='archives' title='October 2007' href='http://blog.roguesheep.com/2007/10/' />
+	<link rel='archives' title='August 2007' href='http://blog.roguesheep.com/2007/08/' />
+	<link rel='archives' title='July 2007' href='http://blog.roguesheep.com/2007/07/' />
+	<link rel='archives' title='June 2007' href='http://blog.roguesheep.com/2007/06/' />
+	<link rel='archives' title='May 2007' href='http://blog.roguesheep.com/2007/05/' />
+	<link rel='archives' title='April 2007' href='http://blog.roguesheep.com/2007/04/' />
+	<link rel='archives' title='March 2007' href='http://blog.roguesheep.com/2007/03/' />
+	<link rel='archives' title='February 2007' href='http://blog.roguesheep.com/2007/02/' />
+	<link rel='archives' title='January 2007' href='http://blog.roguesheep.com/2007/01/' />
+	<link rel='archives' title='December 2006' href='http://blog.roguesheep.com/2006/12/' />
+	<link rel='archives' title='October 2006' href='http://blog.roguesheep.com/2006/10/' />
+	<link rel='archives' title='September 2006' href='http://blog.roguesheep.com/2006/09/' />
+	<link rel='archives' title='August 2006' href='http://blog.roguesheep.com/2006/08/' />
+	<link rel='archives' title='May 2006' href='http://blog.roguesheep.com/2006/05/' />
+	<link rel='archives' title='April 2006' href='http://blog.roguesheep.com/2006/04/' />
+	<link rel='archives' title='December 2005' href='http://blog.roguesheep.com/2005/12/' />
+<link rel='stylesheet' id='codecolorer-css'  href='http://blog.roguesheep.com/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.8' type='text/css' media='screen' />
+<script type='text/javascript' src='http://blog.roguesheep.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://blog.roguesheep.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.roguesheep.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.roguesheep.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Inside RogueSheep' href='http://blog.roguesheep.com/' />
+<link rel="stylesheet" href="http://blog.roguesheep.com/wp-content/plugins/shutter-reloaded/shutter-reloaded.css?ver=2.4" type="text/css" media="screen" />
+<!-- Google Analytics Tracking by Google Analyticator 6.1.1: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-360947-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body>
+
+
+<div id="wholepage">
+	<div id="leftcornertop">
+		<div id="repeatertop">
+		</div>
+		<div id="rightcornertop">
+		</div>	
+	</div>
+		<div id="repeaterleftside">
+		<div id="repeaterrightside">
+
+		<div id="page">
+
+<div id="header">
+	<div id="logo">
+		<a href="http://blog.roguesheep.com"><img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/header.png" alt="RogueSheep" /></a>
+	</div>
+	<div id="leftSheepHeader">
+		<form method="get" id="searchform" action="/index.php">
+	<div>
+		<input type="submit" id="searchsubmit" value="Search" />
+		<input type="text" value="" name="s" id="s" />
+	</div>
+</form>		<div id="rssbutton">
+			<a href="http://blog.roguesheep.com/feed/">Subscribe <img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/rss.png" alt="RSS" align="middle"/></a>
+		</div>
+	</div>
+</div>
+<div id="spacerLine"></div>
+
+<div id="content" class="narrowcolumn">
+
+	<div id="sidebar">
+		<ul>
+				  <li id="linkcat-29" class="linkcat"><h2>iOS</h2>
+	<ul>
+<li><a href="http://148apps.biz">148Apps.biz</a></li>
+<li><a href="http://gamesfromwithin.com/">Games from Within</a></li>
+<li><a href="http://www.mobileorchard.com">Mobile Orchard</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-15" class="linkcat"><h2>Friends of the Sheep</h2>
+	<ul>
+<li><a href="http://inessential.com/" rel="friend met colleague neighbor" title="Developer of NetNewsWire">Brent Simmons</a></li>
+<li><a href="http://wilshipley.com/blog/">Call Me Fishmeal</a></li>
+<li><a href="http://corporationunknown.com/blog/">Corporation Unknown</a></li>
+<li><a href="http://furbo.org/">Furbo.org</a></li>
+<li><a href="http://shapeof.com/" rel="friend met colleague neighbor" title="Proprietor of Flying Meat">Gus Mueller</a></li>
+<li><a href="http://www.halfapixelshort.com/">Half Pixel Short</a></li>
+<li><a href="http://www.rhonabwy.com/" rel="friend met colleague neighbor" title="Seattle Xcoder">Joseph Heck</a></li>
+<li><a href="http://kickingbear.com/blog">Kickingbear Blog</a></li>
+<li><a href="http://www.randsinrepose.com/">Rands in Repose</a></li>
+<li><a href="http://www.red-sweater.com/blog">Red Sweater Blog</a></li>
+<li><a href="http://www.rogueamoeba.com/utm/">Rogue Amoeba</a></li>
+<li><a href="http://www.roguesheep.com" title="The main place for all the good stuff you want.">Sheep Home</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-6" class="linkcat"><h2>Cocoa</h2>
+	<ul>
+<li><a href="http://www.cimgf.com/">Cocoa Is My Girlfriend</a></li>
+<li><a href="http://cocoawithlove.com/">Cocoa with Love</a></li>
+<li><a href="http://www.mac-developer-network.com/">Mac Developer Network</a></li>
+<li><a href="http://www.seattlexcoders.org/">Seattle Xcoders</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-28" class="linkcat"><h2>Apple</h2>
+	<ul>
+<li><a href="http://www.appleoutsider.com/">Apple Outsider</a></li>
+<li><a href="http://daringfireball.net/">Daring Fireball</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-18" class="linkcat"><h2>Adobe</h2>
+	<ul>
+<li><a href="http://blogs.adobe.com/jnack/" title="Excellent blog from Adobe Photoshop Product Manager">John Nack on Adobe</a></li>
+
+	</ul>
+</li>
+			<li><h2>Archives</h2>
+				<ul>
+					<li><a href='http://blog.roguesheep.com/2011/01/' title='January 2011'>January 2011</a></li>
+	<li><a href='http://blog.roguesheep.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.roguesheep.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.roguesheep.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.roguesheep.com/2010/07/' title='July 2010'>July 2010</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+<div id="contentspacing">
+
+		<div class="post">
+
+<h2 id="post-561"><a href="http://blog.roguesheep.com/2011/01/26/macworld-2011-last-call/" rel="bookmark" title="Permanent link to Macworld 2011 &#8211; Last Call">Macworld 2011 &#8211; Last Call</a></h2>
+
+<small>January 26th, 2011 by Chris</small>
+
+<div class="entry">
+<p><a href="http://www.macworldexpo.com/">Macworld Expo 2011</a> is fast approaching and we still have a few passes to give away for free admission. If you are an Apple fan and can make it to San Francisco this week, you will not want to miss this event. Last year was a fantastic time. Besides the show floor full of great products, developers and other goodies for all things Apple, the expo played host for a lot of great content and talks. I&#8217;m sure this year won&#8217;t disappoint.</p>
+
+<p>Of course, you will once again find RogueSheep showing off our iOS software including <a href="http://touchup.roguesheep.com">TouchUp for iPad</a>. We&#8217;ll be at <strong>booth 818, kiosk #61</strong> in the Mobile Application Showcase. Last year the Mobile Application Showcase was a huge hit. This year will be the first for iPad apps, so it&#8217;s bound to be even better. We&#8217;d love to see you there, so be sure and stop by to say hello if you are at the expo. We have some great buttons and other fun schwag to give away.</p>
+
+<p>If you would still like a pass to come see the expo show floor for free, just send a quick email to <a href="mailto:macworld2011@roguesheep.com">macworld2011@roguesheep.com </a></p>
+
+<p>Hope to see you there!</p>
+
+<p> </p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/postage/" title="View all posts in Postage" rel="category tag">Postage</a> | <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/touchup/" title="View all posts in TouchUp" rel="category tag">TouchUp</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a> | <a href="http://blog.roguesheep.com/category/iphone/" title="View all posts in iPhone" rel="category tag">iPhone</a></p>
+
+<p><span>Comments Off</span></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2011/01/26/macworld-2011-last-call/"
+    dc:identifier="http://blog.roguesheep.com/2011/01/26/macworld-2011-last-call/"
+    dc:title="Macworld 2011 &#8211; Last Call"
+    trackback:ping="http://blog.roguesheep.com/2011/01/26/macworld-2011-last-call/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-556"><a href="http://blog.roguesheep.com/2010/12/17/touchup-update-raw-images-and-itunes-rewind/" rel="bookmark" title="Permanent link to TouchUp Update: RAW images and iTunes Rewind">TouchUp Update: RAW images and iTunes Rewind</a></h2>
+
+<small>December 17th, 2010 by Chris</small>
+
+<div class="entry">
+<p>As we start to wind down and settle into the holiday season here at RS HQ, we have a couple of quick updates for you about our newest app: TouchUp for iPad.</p>
+
+<p><strong>Problems with RAW images</strong></p>
+
+<p>A few of our users have reported problems importing RAW photos into TouchUp after updating to iOS 4.2 on their iPads. Some photos in the RAW format will result in a very low resolution image when imported from the Photo Library. The resulting image is about the size of a thumbnail (less than 200 pixels on a side) and when scaled up to fit the display in TouchUp will immediately look very pixelated. In our testing here and with the reports we have had from users so far, the problem seems to be only occurring with RAW images from Nikon cameras (the .NEF format).</p>
+
+<p>It appears that something changed between iOS 3.2 and 4.2 that has caused this problem. If you have seen this behavior, we suspect you have also encountered similar issues with other applications when trying to use the same RAW images. We have reported the issue to Apple and have been working with them to resolve the problem, but the process has been slow so far. We are also continuing to look into ways to work around the issue independently.</p>
+
+<p>When we have more news we will be sure to share it here. If you happen to have encountered this problem with RAW images from other vendors besides Nikon, be sure to let us know <a href="http://touchup.roguesheep.com/contact.html">here</a> so we can communicate that to Apple as well.</p>
+
+<p> </p>
+
+<p><strong>TouchUp Featured in iTunes Rewind for 2010</strong></p>
+
+<p>In some slightly better news, we were thrilled to find that TouchUp was featured as one of the apps in the <strong>iTunes Rewind</strong> promotion on the App Store. <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCustomPage?name=pageiTunesRewind10_iPadApps">The Hot Trends in Apps</a> block featured prominently at the top of the store lists several categories of iPad apps that were big movers on the App Store in 2010. TouchUp is one of the apps selected for the Pen and Brush section! We couldn&#8217;t be more thrilled. Thanks to Apple and all of you for a great launch of TouchUp in 2010.</p>
+
+<p> </p>
+
+<p>If you have any comments or questions about TouchUp, <a href="http://touchup.roguesheep.com/contact.html">be sure to let us know</a>. Enjoy the holidays and see you again in 2011.</p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/touchup/" title="View all posts in TouchUp" rel="category tag">TouchUp</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a></p>
+
+<p><a href="http://blog.roguesheep.com/2010/12/17/touchup-update-raw-images-and-itunes-rewind/#comments" title="Comment on TouchUp Update: RAW images and iTunes Rewind">1 Comment &#187;</a></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/12/17/touchup-update-raw-images-and-itunes-rewind/"
+    dc:identifier="http://blog.roguesheep.com/2010/12/17/touchup-update-raw-images-and-itunes-rewind/"
+    dc:title="TouchUp Update: RAW images and iTunes Rewind"
+    trackback:ping="http://blog.roguesheep.com/2010/12/17/touchup-update-raw-images-and-itunes-rewind/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-530"><a href="http://blog.roguesheep.com/2010/12/17/snoglobe-50000-iad-requests-in-7-days/" rel="bookmark" title="Permanent link to SnoGlobe Over 50,000 iAd Requests In 7 Days">SnoGlobe Over 50,000 iAd Requests In 7 Days</a></h2>
+
+<small>December 17th, 2010 by Jeff</small>
+
+<div class="entry">
+<p>A week ago we released a new version of <a href="http://itunes.com/app/SnoGlobe">SnoGlobe</a>, one of our RogueSheep <a href="http://apps.roguesheep.com/">apps</a>, and this week I decided to share a little behind the scenes data. SnoGlobe was previously priced at $0.99 and had been languishing in the sea of iOS apps. On a good day we sold 2. For the entire month of November we made $40. We figured we could do better as a free app with ads, and besides, we were itching to take iAds out for a spin.</p>
+
+<p>First, the good news. Putting iAds into an iOS application is as easy as the documentation says it is. And in its first week as a free app with iAds, SnoGlobe had respectable downloads, over 50,000 ad requests, and made 3 times what it made in all of November.</p>
+
+<p>Now for the not so great news. As you’ve probably just done the math in your head, that comes out to $120. That’s more than it was bringing in as a paid app, so we made the right choice. But $120 from 50,000 ad requests must mean an abysmal fill rate. Turns out that’s exactly the issue, but for a completely valid reason: Most of our downloads and over 42,000 of the ad requests are from Turkey, but there are no iAd ads in Turkey yet.</p>
+
+<p>Nonetheless, we are glad we did it, and and I am sure we’ll integrate iAds into future RogueSheep offerings. Without further ado, here’s the iAd data from <a href="http://itunes.com/app/SnoGlobe">SnoGlobe’s</a> first seven days:</p>
+
+<p><a href="http://blog.roguesheep.com/wp-content/uploads/2010/12/SnoGlobe-iAd-Data3.png"><img class="aligncenter size-full wp-image-552" src="http://blog.roguesheep.com/wp-content/uploads/2010/12/SnoGlobe-iAd-Data3.png" alt="" width="638" height="629" /></a></p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/iphone/" title="View all posts in iPhone" rel="category tag">iPhone</a></p>
+
+<p><a href="http://blog.roguesheep.com/2010/12/17/snoglobe-50000-iad-requests-in-7-days/#comments" title="Comment on SnoGlobe Over 50,000 iAd Requests In 7 Days">1 Comment &#187;</a></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/12/17/snoglobe-50000-iad-requests-in-7-days/"
+    dc:identifier="http://blog.roguesheep.com/2010/12/17/snoglobe-50000-iad-requests-in-7-days/"
+    dc:title="SnoGlobe Over 50,000 iAd Requests In 7 Days"
+    trackback:ping="http://blog.roguesheep.com/2010/12/17/snoglobe-50000-iad-requests-in-7-days/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-507"><a href="http://blog.roguesheep.com/2010/12/10/roguesheep-holiday-app-news/" rel="bookmark" title="Permanent link to RogueSheep Holiday App News">RogueSheep Holiday App News</a></h2>
+
+<small>December 10th, 2010 by Chris</small>
+
+<div class="entry">
+<p><ins datetime="2010-12-10T22:26:25+00:00"><p>Here at RogueSheep we hope you are as excited about the holiday season as we are. With all the running around buying perfect gifts we know you need a break. If you haven&#8217;t already sent your holiday cards we have some great news about two of our iOS apps that should save you some time. You&#8217;ll be able to re-energize so it will not be a mad-dash on Christmas Eve to fulfill all those wish lists.</p></ins></p>
+
+<div><a href="http://snoglobe.roguesheep.com"><img alt="SnoGlobe Icon" src="https://s3.amazonaws.com/SnoGlobeMedia/SnoGlobeRound64.png" title="SnoGlobe" align="middle" width="64" height="64" /></a>
+<h3 style="display:inline;">SnoGlobe &#8211; FREE!</h3></div>
+
+<p>Last year around this time we introduced a new seasonal iPhone application, <a href="http://snoglobe.roguesheep.com">SnoGlobe</a>. If you haven&#8217;t seen it before, SnoGlobe is a faithful reproduction of a traditional holiday snow globe with flakes that react to the motion of your device. You can add a photo from your Photo Library or take a new one right on the spot. SnoGlobe is great for ringing in holiday cheer. We found a lot of folks enjoyed the application and we wanted to spread the joy even further this year.</p>
+
+<p>SnoGlobe 2.0 was released today. This update adds support for iOS 4, cleans up a few minor issues and incorporates Apple&#8217;s new iAd technology. The biggest change though, is that SnoGlobe is now <em><strong>free</strong></em>!</p>
+
+<p>Now there is really no reason to deprive your iPhone or iPod of some solid holiday decor! You can find it in the App Store at <a href="http://itunes.com/app/SnoGlobe">http://itunes.com/app/SnoGlobe</a></p>
+
+<p> </p>
+
+<div><a href="http://postage.roguesheep.com/holiday"><img alt="Holiday Postage Icon" src="https://s3.amazonaws.com/PostageMedia/hologo.png" title="Holiday Postage" align="middle" width="64" height="72" /></a>
+<h3 style="display:inline;">Holiday ~ Postage</h3></div>
+
+<p>One app isn&#8217;t enough to contain all the Yule-tide fever in our flock. If you are a fan of our award-winning postcard application, <a href="http://postage.roguesheep.com">Postage</a>, be sure to check out <a href="http://itunes.com/app/HolidayPostage">Holiday ~ Postage</a>. It uses the same virtual postcard engine as Postage, but gives you 10 holiday inspired postcard designs and the interface is dressed-up just perfect for the season. This edition of Postage contains some of our very best designs, so don&#8217;t miss it if you didn&#8217;t grab it last year. You can find Holiday ~ Postage for just $0.99 on the App Store at <a href="http://itunes.com/app/HolidayPostage">http://itunes.com/app/HolidayPostage</a>.</p>
+
+<p> </p>
+
+<p><strong>Happy Holidays</strong></p>
+
+<p>All of us here at RogueSheep hope each one of you has a fantastic holiday and thank you for your support. We look forward to bringing more exciting products and updates to you in the coming year!</p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/postage/" title="View all posts in Postage" rel="category tag">Postage</a> | <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a> | <a href="http://blog.roguesheep.com/category/iphone/" title="View all posts in iPhone" rel="category tag">iPhone</a></p>
+
+<p><span>Comments Off</span></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/12/10/roguesheep-holiday-app-news/"
+    dc:identifier="http://blog.roguesheep.com/2010/12/10/roguesheep-holiday-app-news/"
+    dc:title="RogueSheep Holiday App News"
+    trackback:ping="http://blog.roguesheep.com/2010/12/10/roguesheep-holiday-app-news/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-499"><a href="http://blog.roguesheep.com/2010/12/02/free-macworld-2011-expo-passes/" rel="bookmark" title="Permanent link to Free Macworld 2011 Expo passes">Free Macworld 2011 Expo passes</a></h2>
+
+<small>December 2nd, 2010 by Chris</small>
+
+<div class="entry">
+<p><a href="http://www.macworldexpo.com"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://blog.roguesheep.com/wp-content/uploads/2010/12/MW11_Medialogo.png" border="0" alt="MW11_Medialogo.png" width="300" height="142" /></a></p>
+
+<p>Here at RogueSheep we are gearing up to spotlight our passion at <a href="http://www.macworldexpo.com">Macworld 2011 in San Francisco</a> and we would like you to be there too! Admission to the exhibition floor is normally $25, but we have a number of <strong><em>free</em></strong> passes available on a first come, first serve basis.</p>
+
+<p><strong>Expo</strong></p>
+
+<p>If you haven&#8217;t been to Macworld yet, this is a great opportunity to come check it out. The expo hall is full of exciting products and applications. You&#8217;ll be surprised at the sheer number of interesting apps, accessories and books you have probably never encountered before that await you on the show floor. It is also great chance to meet and talk to some of your favorite developers and media personalities in the Apple community.</p>
+
+<p><strong>Conference</strong></p>
+
+<p>In addition to the expo, Macworld 2011 hosts a plethora of conference and training sessions for Apple enthusiasts and professionals. This year there will be a full track for IT folks working with Apple products. There is also a user focused conference with sessions on MacOS, content creation, and small business. The early bird discount for conference sessions ends tomorrow, December 3rd, 2011. If you are thinking of attending, be sure and register now!</p>
+
+<p><strong>Free Pass</strong></p>
+
+<p>Getting a free pass from RogueSheep is simple. Just email us at <a href="mailto:macworld2011@roguesheep.com">macworld2011@roguesheep.com</a> and we will get you set up. Hope to see you there!</p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/macintosh/" title="View all posts in Macintosh" rel="category tag">Macintosh</a> | <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a> | <a href="http://blog.roguesheep.com/category/iphone/" title="View all posts in iPhone" rel="category tag">iPhone</a></p>
+
+<p><span>Comments Off</span></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/12/02/free-macworld-2011-expo-passes/"
+    dc:identifier="http://blog.roguesheep.com/2010/12/02/free-macworld-2011-expo-passes/"
+    dc:title="Free Macworld 2011 Expo passes"
+    trackback:ping="http://blog.roguesheep.com/2010/12/02/free-macworld-2011-expo-passes/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-483"><a href="http://blog.roguesheep.com/2010/10/05/touchup-now-available/" rel="bookmark" title="Permanent link to TouchUp &#8211; Now Available">TouchUp &#8211; Now Available</a></h2>
+
+<small>October 5th, 2010 by Chris</small>
+
+<div class="entry">
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://blog.roguesheep.com/wp-content/uploads/2010/10/TouchUp128.png" border="0" alt="TouchUp128.png" width="128" height="128" /></p>
+
+<p>Our first iPad app, TouchUp, is now available on the <a href="http://itunes.com/app/touchupforipad">iPad App Store</a>.</p>
+
+<p>This is our first big release since <a href="http://postage.roguesheep.com">Postage</a> and we are thrilled to see it make its way into the hands of eager iPad owners across the globe. The launch today has been a resounding success, with TouchUp claiming the #1 spot in the U.S. App Store&#8217;s Photography category and breaking into the Top 100 of overall paid iPad app sales. Everyone at RS HQ is extremely humbled by this first day adoption!</p>
+
+<p>TouchUp is focused on making it fun and easy to add creative effects and refinements to your photos on iPad. The <a href="http://touchup.roguesheep.com">product web site and the tutorial videos</a> will do a much better job of giving you a feel for the application than I can do here. Check it out to see what TouchUp can do for your photos.</p>
+
+<p>To all the naysayers we say– What do you mean iPad isn&#8217;t for creation? Photo editing on iPad is very different from pushing pixels with a mouse on the desktop. Something about holding the iPad and doodling directly on your photo sans the mouse running interference in-between is truly a new experience. I can tell you after working on this app for months, it is also a whole lot of fun. Our administrative assistant, Liz, wasn&#8217;t too engaged with the iPad until she tried TouchUp and now she can&#8217;t wait to get one of her own.</p>
+
+<p>Rather than rehash the basics here, I will take just a bit more of your attention to pass on two nuggets about what I think are some unique features of TouchUp that you may not notice until you have more time to explore the app.</p>
+
+<p>One thing TouchUp adds that is novel in the somewhat crowded market of iOS effect apps is <strong>layering</strong>. Each effect in TouchUp can be applied in its own layer that blends with the layers stacked below it. This works pretty much like a simple form of the layers you would find in Photoshop or Acorn on the desktop. This one feature gives you a lot of power to create some fairly sophisticated edits to images. Look at this photo for instance, which has had Temperature, Blur, Burn and Dodge adjustments layered on top of the original :</p>
+
+<p><a class="”shutterset”" href="http://blog.roguesheep.com/wp-content/uploads/2010/10/TU_Compare_2.jpg"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://blog.roguesheep.com/wp-content/uploads/2010/10/TU_Compare_2.jpg" border="0" alt="TU_Compare_2.jpg" width="300" height="201" /></a></p>
+
+<p>That&#8217;s a pretty dramatic difference with a cool result. Notice how the corners are darker now and the center has a highlight. The edges have also be de-focused a bit with Blur and the tone of the upper left is now much warmer. TouchUp makes this a breeze with painting effects on specific areas and blending the results together in layers. It may sound complicated, but the UI in TouchUp is tuned to make this easy and natural.</p>
+
+<p>BTW, that photo is an array of iPads that our friends at <a href="http://blackpixel.com">Black Pixel</a> had constructed for a cool project they built. Now you know why Apple can&#8217;t keep up with demand.</p>
+
+<p>The other cool feature of TouchUp is the <strong>Accumulation or Painting</strong> effects. Many of the effects in TouchUp and in most of the competing applications on the iPad are applied to your photo with a mask. When you doodle with your finger on the photo you are essentially creating this mask or stencil that is either off or on for each pixel. If the mask is off, the original pixel shows through. If the mask is on, the effected pixel shows.</p>
+
+<p>The painting effects in TouchUp work just a bit differently. Instead of just turning the mask off or on, these effects are applied by building up the effect as you stroke the image. The more you stroke in one area, the more the effect is applied. The simple example is the Paint Brush effect in TouchUp. When you pick a color and paint the Paint Brush effect on your photo, you can keep painting the same area over and over with new color. If you use a brush with some transparency you can also blend the strokes on top of the color that is already there.</p>
+
+<p>Painting, instead of masking, works great with effects like Dodge and Burn. You can burn (darken) or dodge (lighten) an area with multiple brush strokes over and over to keep increasing the effect. Combine this with one of the soft-edged brushes and you&#8217;ll get an amazing and natural &#8216;organic&#8217; feel to your edits. Look at how burning  the mid-tones with a soft, transparent brush made the middle row of iPads look like they have been roughed up a bit in this next image. I wonder if the Black Pixel crew got their iPads at a fire sale?</p>
+
+<p><a href="http://blog.roguesheep.com/wp-content/uploads/2010/10/TouchUp-Photo.jpg"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://blog.roguesheep.com/wp-content/uploads/2010/10/TouchUp-Photo.jpg" border="0" alt="TouchUp Photo.jpg" width="300" height="201" /></a></p>
+
+<p>While I&#8217;m sure this sounds complicated when spelled out in words, its really pretty easy to grok when you have the iPad in your hands and just start playing. Grab a photo or image with a lot of texture and just start rubbing! You&#8217;ll be surprised by the results that make eye-catching pictures.</p>
+
+<p>Now that you have read a bunch of words about pictures, why not download the app and try it first hand on your own photos. If you make anything cool, show us on <a href="https://twitter.com/touchupapp">Twitter</a> or <a href="http://www.facebook.com/apps/application.php?id=149020431778609">Facebook</a>. We are looking forward to what you come up with!</p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/roguesheep/" title="View all posts in RogueSheep" rel="category tag">RogueSheep</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a></p>
+
+<p><a href="http://blog.roguesheep.com/2010/10/05/touchup-now-available/#comments" title="Comment on TouchUp &#8211; Now Available">1 Comment &#187;</a></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/10/05/touchup-now-available/"
+    dc:identifier="http://blog.roguesheep.com/2010/10/05/touchup-now-available/"
+    dc:title="TouchUp &#8211; Now Available"
+    trackback:ping="http://blog.roguesheep.com/2010/10/05/touchup-now-available/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-475"><a href="http://blog.roguesheep.com/2010/09/24/scholarly-shepherding/" rel="bookmark" title="Permanent link to Scholarly Shepherding">Scholarly Shepherding</a></h2>
+
+<small>September 24th, 2010 by Chris</small>
+
+<div class="entry">
+<p>Most of the time our little flock is heads down, creating new apps and software solutions. On occasion, though, we do find the time to pursue other activities of interest. One common extracurricular theme of late has been continuing education.</p>
+
+<p>
+</p><p><strong>UW &#8211; IPhone and Cocoa Development</strong></p>
+<p>Last year I was fortunate to be given the opportunity to teach Cocoa programming through the University of Washington&#8217;s Professional and Continuing Education department. With help of an <a href="http://www.pce.uw.edu/prog.aspx?id=4074&amp;terms=cocoa">all-star advisory board</a>, we managed to create a very unique three-course program. Students with solid prior programming experience were taught the ins and outs of MacOS and iOS development and earned a handsome certificate after 30 weeks of study across 3 quarters.</p>
+<p>We have had a fantastic response to the program. In our first year we filled two separate sections to capacity. Students completing the program have been overwhelmingly positive in their assessment. Several already have apps in the store or have started career changes based on the knowledge they gained. It has also been a great experience for the instructors to grow our own skills and be able to pass some wisdom on to a new breed of Cocoa developers.</p>
+<p>Our certificate program is going for another round again this year. Both <a href="http://www.pce.uw.edu/bio.aspx?id=2755">Hal</a> and myself are returning to teach the MacOS and Advanced courses respectively. We are also adding two new faces to the instructor team for the iOS-focused class. Luke Adamson is a veteran Cocoa developer, having worked for <a href="http://www.omnigroup.com/">The Omni Group</a> and his own Cocoa consulting company for years. Luke will be joined by <a href="http://corporationunknown.com/blog/">Paul Goracke</a>, who has been programming Apple frameworks since back in the CodeWarrior days. The program is going to be even better this year and I can&#8217;t wait to see the student response.</p>
+<p>If you are in the Seattle area and want to start your mastery of the Cocoa platforms I recommend you give our program a look. Our downtown Seattle session is now wait-listed, but the Bellevue session that starts in Winter still has spots. You can apply <a href="http://www.pce.uw.edu/prog.aspx?id=4074&amp;terms=cocoa">here</a>. Hope I see you in class this Spring!</p>
+<p><strong>HTML5 Mobile Web Development</strong></p>
+<p>In addition to all this Cocoa learn&#8217;n, our very own Jake Carter is teaching a course of his own. HTML5 is the new hotness and Jake is your Jedi Master, ready to guide you in the ways of CSS3 on mobile platforms. I&#8217;ve seen some of the cool demos Jake has worked up and I&#8217;m sure this class is going to be great. If you are interested in mobile web development you can&#8217;t afford not to dive in and attend this <strong>FREE</strong> course!</p>
+<p>Jake&#8217;s class is a live, 10-session, online offering through O&#8217;Reilly that starts in October. If you can&#8217;t make the online sessions, you can purchase a video edition after. Find out all the details and sign up <a href="http://training.oreilly.com/html5mobile/">here</a>. Did I mention, it is <strong>FREE</strong>?</p>
+<div></div>
+
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/cocoa/" title="View all posts in Cocoa" rel="category tag">Cocoa</a> | <a href="http://blog.roguesheep.com/category/html5/" title="View all posts in HTML5" rel="category tag">HTML5</a> | <a href="http://blog.roguesheep.com/category/macintosh/" title="View all posts in Macintosh" rel="category tag">Macintosh</a> | <a href="http://blog.roguesheep.com/category/technology/" title="View all posts in Technology" rel="category tag">Technology</a> | <a href="http://blog.roguesheep.com/category/web-development/" title="View all posts in Web Development" rel="category tag">Web Development</a> | <a href="http://blog.roguesheep.com/category/ipad/" title="View all posts in iPad" rel="category tag">iPad</a> | <a href="http://blog.roguesheep.com/category/iphone/" title="View all posts in iPhone" rel="category tag">iPhone</a></p>
+
+<p><span>Comments Off</span></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/09/24/scholarly-shepherding/"
+    dc:identifier="http://blog.roguesheep.com/2010/09/24/scholarly-shepherding/"
+    dc:title="Scholarly Shepherding"
+    trackback:ping="http://blog.roguesheep.com/2010/09/24/scholarly-shepherding/trackback/" />
+</rdf:RDF>
+</div>	<div class="post">
+
+<h2 id="post-473"><a href="http://blog.roguesheep.com/2010/09/17/acorn-version-2-5/" rel="bookmark" title="Permanent link to Acorn version 2.5">Acorn version 2.5</a></h2>
+
+<small>September 17th, 2010 by Chris</small>
+
+<div class="entry">
+<p>Our colleagues over at <a href="http://flyingmeat.com/">Flying Meat</a> have just released an update to their respected Mac OS X image editing app, <a href="http://flyingmeat.com/acorn/">Acorn</a>. The new version adds Layer Mask functionality similar to what you would find in Photoshop.</p>
+
+<p>Acorn is a real bargain considering the price for all the power it packs. Be sure to check it out if you are in the market for a capable image editor for your Mac.</p>
+</div>
+
+<small></small>
+<p class="postmetadata"> 
+<img src="http://blog.roguesheep.com/wp-content/themes/black-letterhead/images/tags.png" /> <a href="http://blog.roguesheep.com/category/cocoa/" title="View all posts in Cocoa" rel="category tag">Cocoa</a> | <a href="http://blog.roguesheep.com/category/macintosh/" title="View all posts in Macintosh" rel="category tag">Macintosh</a></p>
+
+<p><span>Comments Off</span></p>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://blog.roguesheep.com/2010/09/17/acorn-version-2-5/"
+    dc:identifier="http://blog.roguesheep.com/2010/09/17/acorn-version-2-5/"
+    dc:title="Acorn version 2.5"
+    trackback:ping="http://blog.roguesheep.com/2010/09/17/acorn-version-2-5/trackback/" />
+</rdf:RDF>
+</div>
+<div class="navigation">
+	<div class="alignleft"><a href="http://blog.roguesheep.com/page/2/" >&laquo; Previous Entries</a></div>
+	<div class="alignright"><a href="http://blog.roguesheep.com/page/2/" >Next Page &raquo;</a></div>
+</div>
+		
+	</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+shutterSettings = {
+	imgDir : 'http://blog.roguesheep.com/wp-content/plugins/shutter-reloaded/menu/',
+	L10n : ["Previous","Next","Close","Full Size","Fit to Screen","Image","of","Loading..."]
+}
+//]]>
+</script>
+<script src="http://blog.roguesheep.com/wp-content/plugins/shutter-reloaded/shutter-reloaded.js?ver=2.4" type="text/javascript"></script>
+<script type="text/javascript">
+try{shutterReloaded.init();}catch(e){}</script>
+<div id="footer">
+	<p class="center">
+
+                Copyright &#169; 2003-2011 <a href="http://www.roguesheep.com">RogueSheep</a>
+                Powered by <a href="http://wordpress.org">WordPress</a>
+                <a> <a href="http://blog.roguesheep.com/wp-login.php">Log in</a></a>
+	</p>
+</div>
+</div>
+
+
+		</div>
+	</div>
+	<div id="leftcornerbottom">
+		<div id="repeaterbottom">
+		</div>
+		<div id="rightcornerbottom">
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.308 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2011-03-09 14:21:33 -->
+<!-- super cache -->

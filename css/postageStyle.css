@@ -1,0 +1,211 @@
+@import url('productPageStyle.css');
+
+.ProductTitle
+{
+	margin-left: 20px;
+}
+
+.BannerDescription
+{
+	margin-top: 0px;
+}
+
+#ADALeaves
+{
+	margin-top: 45px;
+	margin-left: 30px;
+}
+
+#MWLeaves
+{
+	margin-left: 35px;
+}
+
+.AppStoreButton
+{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.iPhoneScreenshotWidget .nivo-controlNav 
+{
+	left: 78px;
+}
+
+
+/* Since we want the gallery to go across both columns, we don't want to use table layout here, so we'll do this 'feature' differently */
+#TemplatesFeature
+{
+	position:relative;
+	width:100%;
+	height: 315px;
+
+/*
+	margin-top: 0px;
+	padding-top: 100px;
+*/
+}
+
+#TemplatesFeature .firstColumn
+{
+	position: absolute;
+	left: 90px;
+	top:35px;
+	width: 35%;
+	display: block;
+	text-align: center;
+
+	/* from ProductFeaturesArea */
+	color: #2E2E2E;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #EEEEEE;
+
+}
+
+#TemplatesFeature .firstColumn p
+{
+	margin-top: 15px;
+	font-size: 0.8em;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #EEEEEE;
+}
+
+#TemplatesFeature .secondColumn
+{
+	position: absolute;
+	left: 460px;
+	top:30px;
+
+	width: 40%;
+	display: block;
+}
+
+
+#GalleryTitle
+{
+	position: absolute;
+	top:275px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #2E2E2E;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #EEEEEE;
+
+	clear: both;
+	text-align: center;
+}
+
+.Gallery
+{
+	margin-left: 13%;
+	margin-right: 13%;
+	width: 74%;
+/*
+	margin-left: 7%;
+	margin-right: 7%;
+*/
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+/* 	width: 86%; */
+	height: 128px;
+
+}
+
+/*
+#Gallery>img
+{
+	margin:auto;
+	display: block;
+}
+*/
+.rsGalleryShowcaseImage
+{
+	margin-top: 10px;
+}
+
+
+.rsGalleryThumbDiv > img
+{
+	margin-top: 10px;
+}
+
+#postagevideo
+{
+	position: absolute; 
+	top: 0px;
+	left: 0px;
+	width:265px; 
+	height: 396px; 
+	z-index: 1000;
+}
+
+#videoContainer
+{
+	position: absolute; 
+	display: none;
+	top: 114px;
+	left: 28px;
+	width:265px; 
+	height: 396px; 
+	z-index: 1000;
+}
+
+#videobutton
+{
+	position: absolute;
+/* 	background-position: 0px 0px; */
+	left:0px;
+	top: 642px;
+
+	margin-top: 18px;
+	text-align: center;
+	height: 33px;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+	line-height: 34px;
+}
+
+.playvideo
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/playvideo.png) no-repeat 50% 0;
+}
+
+.stopvideo
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/playvideo.png) no-repeat 50% 100%;
+}
+
+
+.videoStopButton
+{
+	position: absolute;
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/videoStop.png) center no-repeat;
+	top: 416px;
+	left: 102px;
+	height: 61px;	
+	width: 61px;	
+	z-index: 1001;
+	
+}
+
+#ThemedApps
+{
+	background:url(https://s3.amazonaws.com/PostageMedia2/Themed.png) center no-repeat;
+	display: block;
+	height: 260px;
+	width: 234px;
+}
+
+#ThemedApps:hover
+{
+	background:url(https://s3.amazonaws.com/PostageMedia2/ThemedHover.png) center no-repeat;
+	display: block;
+	height: 260px;
+	width: 234px;
+
+}

@@ -1,0 +1,79 @@
+/*
+	Import non-standard css.
+*/
+@import url('roguesheepStyle.css');
+
+#pageContainer {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;	
+/* 	background: #ffffff url(https://s3.amazonaws.com/PostageMedia/background.png) no-repeat 0 1px; */
+	}
+
+#product
+{
+	position: relative;
+	top: -8px;
+}
+
+#pageContainer form
+{
+	padding-top: 30px;
+
+}
+
+#letterContainer {
+		padding: 20px;
+		
+		text-align: left;
+	}
+
+textarea {
+	position: relative;
+/* 	top: -20px; */
+	width: 700px;
+	
+	font-size: 1.6em;
+	max-width: 700px; 
+	}
+
+.textBox {
+	width:  300px;
+	
+	font-size: 1.6em;
+	
+	border-width: 0px;
+	border-bottom: 1px solid #000000;
+	background-color: transparent;
+	
+	padding-right: 15px;
+	padding-left: 15px;
+	}
+	.placeholdBlur {
+		color: #afafaf;
+/* 		color: #cccccc; */
+		}
+	
+	.placeholdFocus {
+		color: #000000;
+		}
+	
+.optional {
+	color: #999999;
+	font-size: .8em;
+	}
+
+#submitButtonContainer {
+	text-align: center;
+	}
+#submitButton:focus {
+	-moz-outline: 0px dotted red;
+	}
+	
+#deviceType {
+	vertical-align: baseline;
+	}
+
+#osVersion {
+	vertical-align: baseline;
+	}

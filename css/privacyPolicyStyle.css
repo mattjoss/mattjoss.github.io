@@ -1,0 +1,17 @@
+@import url('productPageStyle.css');
+
+.PrivacyPolicyTitle
+{
+	padding-top: 50px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.PrivacyPolicyContent
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 50px;
+}
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=800" />
+	
+	<title>RogueSheep - Support</title>
+	<script src="js/libs/jquery-1.5.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.inputplaceholder.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.thickbox.js" type="text/javascript" charset="utf-8"></script>
+	
+	<link href="https://s3.amazonaws.com/PostageMedia/favicon.jpg" rel="icon" type="image/png" />
+	
+	<!--[if lte IE 7]>
+		<link href="css/boilerplate/lib/ie.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+		<link href="css/contact_ie.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	
+	<link href="css/form.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('#name,#email').placehold({blurClass: "placeholdBlur", focusClass: "placeholdFocus"});
+		});
+		$(document).ready(function(){
+		        $('#submitButton').hover(
+		            function(){ // Change the input image's source when we "roll on"
+		                $(this).attr({ src : 'https://s3.amazonaws.com/PostageMedia/sendButtonOver.png'});
+		            },
+		            function(){ // Change the input image's source back to the default on "roll off"
+		                $(this).attr({ src : 'https://s3.amazonaws.com/PostageMedia/sendButtonUp.png'});             }
+		        );
+				$('#submitButton').mousedown(
+		            function(){ // Change the input image's source when we "roll on"
+		                $(this).attr({ src : 'https://s3.amazonaws.com/PostageMedia/sendButtonDown.png'});
+		            }
+				);
+				$('#submitButton').mouseup(
+		            function(){ // Change the input image's source back to the default on "roll off"
+		                $(this).attr({ src : 'https://s3.amazonaws.com/PostageMedia/sendButtonOver.png'});
+		            }
+		        );
+				$('#submitButton').click(
+					function() {
+						if ($("#commentTextarea").val().length > 0) {
+							// We're valid, send the info.
+							var commentTextarea = $("#commentTextarea").val();
+							var product = $("#product").val();
+							var deviceType = $("#deviceType").val();
+							var osVersion = $("#osVersion").val();
+							var name = $("#name").val();
+							var email = $("#email").val();
+							
+							var dataString = 'commentTextarea=' + escape(commentTextarea) + 
+											 '&product=' + product +
+											 '&deviceType=' + deviceType +
+											 '&osVersion=' + osVersion +
+											 '&name=' + escape(name) +
+											 '&email=' + escape(email);
+											
+							$.ajax({
+								type: "POST",
+								url: "contact.php",
+								data: dataString,
+								success: function() {
+									top.location.href = "http://www.roguesheep.com";
+								}
+							});
+						}
+						return false;
+					}
+				);
+		    });
+	</script>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-360947-7']);
+	  _gaq.push(['_setDomainName', '.roguesheep.com']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>	
+</head>
+<body id='all'>
+
+  <div id="container">
+    <header>
+		<div id="headerDiv"> 
+			<ul id="navbar">
+				<li>
+					<a href="http://www.roguesheep.com" title="Home">
+						<span id='navbar-sheep' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="products.html" title="Products">
+						<span id='navbar-products' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="support.html" title="Support">
+						<span id='navbar-support' class='navBarItem navbar-selected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.roguesheep.com" title="Blog">
+						<span id='navbar-blog' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+			</ul>
+			<a href="http://www.roguesheep.com" title="Home">
+				<img id="RSBanner" src="https://s3.amazonaws.com/RogueSheepComMedia/RogueSheepLogo_small.png"/>			
+			</a>
+		</div>
+    </header>
+    <div id="main">
+		<div id='contentArea'>
+			<div id="pageContainer">
+<!-- 				<div id="letterContainer"> -->
+					<form name="contactForm" id="contactForm" action="contact.php" method="get" accept-charset="utf-8">
+						<img src="https://s3.amazonaws.com/PostageMedia/dearsheep.png" width="236" height="61" alt="Dear RogueSheep"><br />
+						<img src="https://s3.amazonaws.com/RogueSheepComMedia/Re.png" alt="Regarding">
+						<select name="product" id="product" size="1">
+							<option value="Instaview">Instaview</option>
+							<option value="Postage">Postage</option>
+							<option value="TouchUp">TouchUp for iPad</option>
+							<option value="EasyAlarms">Easy Alarms</option>
+							<option value="RoseGlobe">RoseGlobe</option>
+							<option value="PostageRomance">Postage~Romance</option>
+							<option value="HalloweenPostage">Halloween~Postage</option>
+							<option value="HolidayPostage">Holiday~Postage</option>						
+							<option value="SnoGlobe">SnoGlobe</option>						
+							<option value="dontKnow">Don't know</option>
+						</select>
+
+						<textarea id="commentTextarea" name="commentTextarea" cols="60" rows="10"></textarea>
+						<div class="optional">Optional</div>
+						Also, I'm using a(n) 
+						<select name="deviceType" id="deviceType" size="1">
+							<option value=""></option>
+							<option value="iPad">iPad</option>
+							<option value="iPhone">iPhone</option>
+							<option value="iPod_touch">iPod Touch</option>
+							<option value="Mac">Mac</option>
+						</select>
+						running iOS version 
+						<select name="osVersion" id="osVersion" size="1">
+							<option value=""></option>
+							<option value="2.X">iOS 2.X</option>
+							<option value="3.0">iOS 3.0</option>
+							<option value="3.1">iOS 3.1</option>
+							<option value="3.2">iOS 3.2</option>
+							<option value="4.0">iOS 4.0</option>
+							<option value="4.1">iOS 4.1</option>
+							<option value="4.2">iOS 4.2</option>						
+							<option value="4.3">iOS 4.3</option>						
+							<option value="5.0">iOS 5.0</option>						
+							<option value="10.6">OS X Snow Leopard (10.6)</option>						
+							<option value="10.7">OS X Lion (10.7)</option>						
+							<option value="dontKnow">Don't know</option>
+						</select>.<br />
+						<br />
+						<br />
+						<img src="https://s3.amazonaws.com/PostageMedia/sincerly.png" width="106" height="62" alt="Sincerly"><br />
+						<br />
+						<input id="name" name="name" class="textBox" type="text" value="Your Name" /><br />
+						<br />
+						<input id="email" name="email" class="textBox" type="text" value="Your Email" /><br />
+						<br />
+						<br />
+						<div id="submitButtonContainer">
+							<input name="submitButton" id="submitButton" type="image" src="https://s3.amazonaws.com/PostageMedia/sendButtonUp.png" />
+						</div>
+					</form>
+				<!-- </div> --> <!-- letterContainer -->
+			</div> <!-- pageContainer -->
+		</div> <!-- contentArea -->
+	    <footer id='footer'>
+			<a href='http://roguesheep.com'>Home</a>
+			<a href='http://twitter.com/roguesheep'>RogueSheep on Twitter</a>
+			<a href='support.html'>Support</a>
+			
+			<a href='http://roguesheep.com'>&copy; 2011 RogueSheep Incorporated</a>
+
+	    </footer>
+
+	</div> <!-- main -->
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+
+  <script>
+   var _gaq = [['_setAccount', 'UA-360947-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+</body>
+</html>

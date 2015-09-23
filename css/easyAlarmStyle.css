@@ -1,0 +1,69 @@
+@import url('productPageStyle.css');
+
+.BannerDescription
+{
+	margin-top: 10px;
+	height: 310px;
+}
+
+.ProductTitle
+{
+	margin-left: 25px;
+	margin-top: 0px;
+}
+
+
+.ProductFeaturesArea>div
+{
+	margin-top: 100px;
+}
+
+
+#QuickEasyFeatureTitle
+{
+	padding-top:100px;
+}
+
+#SkipFeatureTitle
+{
+	padding-top:100px;
+}
+
+
+#MultiTimerFeatureTitle
+{
+	padding-top:100px;
+}
+
+
+#SnoozeFeatureTitle
+{
+	padding-top:100px;
+}
+
+#DatedFeatureTitle
+{
+	padding-top:100px;
+}
+
+.iPhoneScreenshotWidget .nivo-controlNav 
+{
+	left: 88px;
+}
+
+.AppStoreButton
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BannerDescription p
+{
+	text-align: center;
+}
+
+.ProductFeaturesArea
+{
+	border-spacing: 100px;
+}
+

@@ -1,0 +1,282 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+<!--   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+
+  <title>Instaview</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/instaviewStyle.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body id='all'>
+
+  <div id="container">
+    <header>
+		<div id="headerDiv"> 
+			<ul id="navbar">
+				<li>
+					<a href="http://www.roguesheep.com" title="Home">
+						<span id='navbar-sheep' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="products.html" title="Products">
+						<span id='navbar-products' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="support.html" title="Support">
+						<span id='navbar-support' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.roguesheep.com" title="Blog">
+						<span id='navbar-blog' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+			</ul>
+			<a href="http://www.roguesheep.com" title="Home">
+				<img id="RSBanner" src="https://s3.amazonaws.com/RogueSheepComMedia/RogueSheepLogo_small.png"/>			
+			</a>
+		</div>
+    </header>
+    
+    <div id="main">
+		<div id='contentArea'>
+		<!--[if lt IE 8]> 
+		<p id="IE7Warning"><a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie">Internet Explorer 8</a> or greater is required to view this page correctly.  <br/>It is even better in <a href="http:/www.mozilla.com/">Firefox</a>, <a href="http:/www.google.com/chrome/">Chrome</a> or <a href="http:/www.apple.com/safari/">Safari</a></p>
+		 <![endif]-->
+			<div class='ProductPageBanner'>
+				<img class='ProductTitle' src='https://s3.amazonaws.com/InstaviewMedia/InstaviewTitleLarge.png'>
+				<div class='BannerDetailContainer'>
+					<div class='BannerDescription'><h1 id="InstaviewTagline">Taking Instagram to the Macs!</h1><br/>Instagram is great, but having to pull your phone out of your pocket to check your Instagram feed can be tedious.  Wouldn't it be great to keep up with your Instagram feed from your Mac?  What about putting a window in the corner of your Mac and have it cycling through popular photos?  Suppose you are heading to Paris and want to get psyched for your trip by watching a slideshow of photos taken in Paris?  
+					<br/>
+					<br/>
+					You get all that and more with Instaview.
+					<br/>
+					<br/>
+					<h6>
+					(Note:  You cannot upload photos to Instagram from Instaview as Instagram does not allow it.)
+					</h6>
+					</div>
+					<a class='MacAppStoreButton' href="http://itunes.apple.com/us/app/instaview/id431353913?ls=1&mt=12&partnerId=30&siteID=Rh4pksU9iI0"></a>
+				</div>
+			</div>
+			<a id='GalleryModeAppStoreButton' class='MacAppStoreButton' href="http://itunes.apple.com/us/app/instaview/id431353913?ls=1&mt=12&partnerId=30&siteID=Rh4pksU9iI0"></a>
+			<div class='MacScreenshotWidget'>
+				<img id='iPad' src='https://s3.amazonaws.com/InstaviewMedia/MacScreen.png'/>
+				<div id='screenshotContainer'>
+					<div id='screenshotNivoSlider' class="nivoSlider">
+						<a href="#InstaviewScreenshot1">
+							<img src='https://s3.amazonaws.com/InstaviewMedia/screenshots/Frames2-small.jpg'/>
+						</a>
+						<a href="#InstaviewScreenshot2">
+							<img src='https://s3.amazonaws.com/InstaviewMedia/screenshots/RolloverPopover-small.jpg'/>
+						</a>
+						<a href="#InstaviewScreenshot3">
+							<img src='https://s3.amazonaws.com/InstaviewMedia/screenshots/Badging-small.jpg'/>
+						</a>
+						<a href="#InstaviewScreenshot4">
+							<img src='https://s3.amazonaws.com/InstaviewMedia/screenshots/StreamChoices-small.jpg'/>
+						</a>
+						<a href="#InstaviewScreenshot5">
+							<img src='https://s3.amazonaws.com/InstaviewMedia/screenshots/FullSize-small.jpg'/>
+						</a>
+					</div>
+				</div>
+				<p id="viewLarger">(Click iMac screen to view larger)</p>
+			</div>
+<!--
+			<div id='Gallery' class='Gallery'>
+			</div>
+-->
+			<div id="InstaviewScreenshot1" style="display:none;">
+				<img src="https://s3.amazonaws.com/InstaviewMedia/screenshots/Frames2Zoom.jpg"/>
+			</div>
+			<div id="InstaviewScreenshot2" style="display:none;">
+				<img src="https://s3.amazonaws.com/InstaviewMedia/screenshots/RolloverPopoverZoom.jpg" />
+			</div>
+			<div id="InstaviewScreenshot3" style="display:none;">
+				<img src="https://s3.amazonaws.com/InstaviewMedia/screenshots/BadgingZoom.jpg" />
+			</div>
+			<div id="InstaviewScreenshot4" style="display:none;">
+				<img src="https://s3.amazonaws.com/InstaviewMedia/screenshots/StreamChoices.jpg" />
+			</div>
+			<div id="InstaviewScreenshot5" style="display:none;">
+				<img src="https://s3.amazonaws.com/InstaviewMedia/screenshots/FullSizeZoom.jpg" />
+			</div>
+			
+			<div class='ProductFeaturesArea'>
+				<div>
+
+					<div class='firstColumn'>
+						<span id='ViewFeatureTitle' class='ProductFeatureTitle'>View Photo Streams</span>
+						<p>Instaview is all about viewing Instagram photos.  You can view any of the following items in their own photo frame.
+						</p>
+						<p/>
+						<ul>
+							<li>Your Feed (Photos of those you are following)</li>
+							<li>Any User's Photos</li>
+							<li>Photos you've liked</li>
+							<li>Popular Photos</li>
+							<li>Location based photos (i.e. Paris, New York, etc.)</li>
+							<li>Photos tagged with a hashtag (i.e. #beach)</li>
+						</ul>
+											</div>
+					<div class='secondColumn' >
+						<img  src='https://s3.amazonaws.com/InstaviewMedia/LoadingParis.png' alt='View Photo Streams' />
+					</div>
+				</div>	
+				<div>
+					<div class='firstColumn' >
+						<img src='https://s3.amazonaws.com/InstaviewMedia/UserPopover.png' alt='Community' />
+					</div>
+					<div  class='secondColumn'>
+						<span class='ProductFeatureTitle'>Community</span>
+						<p>Instagram is about community.  Instaview allows you to participate in that community from your Mac.  Mark photos as Liked and comment on photos. See who is following your friends, start following them too or just view their photos.
+						</p>						
+						<p>Instaview makes it easy to navigate and interact within the Instagram community.
+						</p>
+					</div>
+				</div>	
+				<div id='FramesFeature'>
+					<div  class='firstColumn'>
+						<span class='ProductFeatureTitle'>Frames</span>
+						<p>Instaview comes with a variety of photo frames allowing you to frame your Instagram photos however you'd like.  From a simple white or black outline to a corkboard which shows the user, comment, timeframe and location of the photo.  
+						<br><br>
+						For the truly inspired, you can also create your own photo frames.  <a href="mailto:support.instaview@roguesheep.com">Contact us</a> to find out how.
+						</p>
+					</div>
+					<div class='secondColumn' >
+						<img src='https://s3.amazonaws.com/InstaviewMedia/VintageTwins.png' alt='Effects' />
+					</div>
+				</div>	
+			</div> <!-- ProductFeaturesArea -->
+
+			<div id='FrameGallery' class='Gallery'>
+				<!-- 				<div class='GalleryShadow'></div> -->
+
+					<img data-src='BlackOutline.png' alt='Black Outline'/>
+					<img data-src='MattedBlackMetalFrame.png' alt='Matted Black Frame'/>
+					<img data-src='Corkboard.png' alt='Corkboard'/>
+					<img data-src='MetalStand.png' alt='Metal Stand'/>
+					<img data-src='ThinWoodFrame.png' alt='Thin Wood Frame'/>
+					<img data-src='TallMattedBlackMetal.png' alt='Matted Black Frame II'/>
+					<img data-src='VintageCorners.png' alt='Vintage Corners'/>
+					<img data-src='WhiteOutline.png' alt='White Outline'/>
+					<img data-src='WideWood.png' alt='Wide Wood Frame'/>
+					<img data-src='BlackMetalFrame.png' alt='Black Metal Frame'/>
+
+			</div>
+			<div class='ProductFeaturesArea'>
+
+				<div>
+					<div class='firstColumn' >
+						<img src='https://s3.amazonaws.com/InstaviewMedia/SlideshowPrefs.png' alt='Slideshow' />
+					</div>
+					<div  class='secondColumn'>
+						<span class='ProductFeatureTitle'>Slideshow</span>
+						<p>The Popular stream has a lot of great photos, but you don't want to have to manually go through them.  With Instaview, you can put the Popular stream into a frame and turn on slideshow for that frame.  Instaview will cycle through the popular photos and you can go about your business.  If you see one you like, just rollover it and you'll see the photo details.  Of course, slideshow is not limited to the Popular stream.  You can turn on slideshow for any stream. 
+						</p>
+					</div>
+				</div>	
+				<div>
+					<div class='firstColumn' >
+						<span class='ProductFeatureTitle'>View and Save Full Size Images</span>
+						<p>See a photo you like and would like to save?  No problem.  Instaview allows you to save the full size Instagram photo to your Mac.</p>
+						
+					</div>
+					<div  class='secondColumn'>
+						<img src='https://s3.amazonaws.com/InstaviewMedia/FullSize.png' alt='Save' />
+					</div>
+				</div>	
+			<div>
+
+			</div>
+			</div> <!-- ProductFeaturesArea -->
+			<p id="MoreInfo">You can get more details about Instaview from our <a href="./instaview/help.html">help page</a> or by <a href="support.html">contacting us</a>.</p>
+			
+		</div> 
+    
+    <footer id='footer'>
+		<a href='http://roguesheep.com'>Home</a>
+		<a href='http://twitter.com/roguesheep'>RogueSheep on Twitter</a>
+		<a href='support.html'>Support</a>
+		
+		<a href='http://roguesheep.com'>&copy; 2011 RogueSheep Incorporated</a>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
+	<script src="js/libs/jquery-ui-1.8.10.custom.min.js"></script>
+	<script src="js/libs/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<script src="js/libs/fancyzoom.min.js" type="text/javascript"></script>
+
+<!-- 	<script src='js/libs/jquery.swfobject.1-1-1.min.js'></script> -->
+	<script src="js/mylibs/gallery.js"></script>
+	<script src="js/instaview.js"></script>
+
+ 
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <!-- end concatenated and minified scripts-->
+  
+ 
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+
+  <script>
+   var _gaq = [['_setAccount', 'UA-360947-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>

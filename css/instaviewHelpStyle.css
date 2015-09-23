@@ -1,0 +1,35 @@
+@import url('productPageStyle.css');
+
+.HelpPageTitle
+{
+	font-size: 1.8em;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.HelpPageContent
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 50px;
+}
+
+
+.HelpPageContent h2
+{
+	padding-top: 14px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+}
+
+.HelpPageContent h3
+{
+	font-size: 1.1em;
+	padding-bottom: 8px;
+}
+
+.HelpPageContent p
+{
+	padding-bottom: 8px;
+}

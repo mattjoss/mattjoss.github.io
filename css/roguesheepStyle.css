@@ -1,0 +1,196 @@
+@import url('html5boilerplate.css');
+
+/*****************************************************************************************************************************************/
+/* RogueSheep */
+/*****************************************************************************************************************************************/
+
+#RSBanner
+{
+	padding-top:30px;
+	padding-bottom:40px;
+}
+
+.selectedNavItem 
+{
+	color: #FFFFFF;
+/* 	color: white; */
+/* 	text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,  0 0 0.2em #87F; */
+	text-shadow: 0 0 1.0em #FFFFFF;
+	
+	font-size: 20px;
+}
+
+#headerDiv
+{
+/* 	color: #FFFFFF; */
+	color: #858585;
+	position: relative;
+	margin: auto;
+	width: 922px;
+	background-repeat:no-repeat;
+ 	background-image: url(https://s3.amazonaws.com/RogueSheepComMedia/HeaderLight.png); 
+}
+
+#navbar
+{
+	list-style-type:none;
+	float: right;
+	margin-top: 44px;
+}
+
+#navbar li
+{
+	float:left;
+}
+
+.navBarItem 
+{
+/* 	text-shadow: #DDDDDD 0px -1px 0px; */
+/* for text navbar
+	font-size: 22px;
+	left:0px;
+	top:60px;
+	height: 50px;
+	position: absolute;
+*/
+	float:left;
+	height:54px;
+}
+
+
+.navbar-selected
+{
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/NavBar.png) no-repeat;
+	background-position-y:-108px;
+}
+
+.navbar-deselected
+{
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/NavBar.png) no-repeat;
+	background-position-y:0px;
+}
+
+.navbar-deselected:hover
+{
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/NavBar.png) no-repeat;
+	background-position-y:-54px;
+}
+
+#navbar-sheep
+{
+	background-position-x:0px;
+	width:60px;
+}
+
+#navbar-products
+{
+	background-position-x: -60px;
+	width:112px;
+}
+
+#navbar-support
+{
+	background-position-x:-172px;
+	width:106px;
+}
+
+#navbar-blog
+{
+	background-position-x:-278px;
+	width:77px;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+#contentArea a
+{
+	color:#603477;
+}
+
+#contentArea a:hover
+{
+	color:gray;
+}
+
+#ProductsTabButton
+{
+	left:660px;
+}
+
+#SupportTabButton
+{
+	left:770px;
+}
+
+#BlogTabButton
+{
+	left:860px;
+}
+
+#headerSpacer
+{
+	margin-left: 200px;
+}
+
+body
+{
+	background-repeat: repeat;
+ 	background-image: url(https://s3.amazonaws.com/RogueSheepComMedia/BackgroundTile.jpg); 
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+/* To get content area centered in browser, set margins to auto.  Set padding of parent to get a guaranteed margin area. */
+#contentArea
+{
+/* 	background:url(../images/PaperBackground.png) repeat; */
+/* 	background:url(../images/pattern_bg.jpg) repeat; */
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/content_background.jpg) repeat;
+	width: 922px;
+	margin: 0px auto;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding-bottom: 15px;
+	
+	color:#444444;
+	text-shadow: 0px 1px 0px #EEEEEE;
+}
+
+#footer
+{
+	height: 60px;
+	width: 922px;
+	padding-top: 15px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#footer a
+/* #footer ul li */
+{
+	display: inline;
+	list-style-type: none;
+	padding-left: 25px;
+	text-align: center;
+	color: #6F597D;
+}
+
+#IE7Warning
+{
+	margin-left: 20px;
+	padding-top: 30px;
+	font-size: 1.2em;
+	color: red;
+}
+
+p#IE7Warning a
+{
+	color: #8f100a;
+}
+
+

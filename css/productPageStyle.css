@@ -1,0 +1,485 @@
+@import url('roguesheepStyle.css');
+@import url('nivo-slider.css');
+
+body
+{
+	font-family:"Helvetica";
+}
+
+#contentArea
+{
+	position:relative;
+/* 	text-shadow:#482914 -1px 0px 3px,#482914 0px 1px 3px,#482914 1px 0px 3px,#482914 0px -1px 3px; */
+}
+
+/* BANNER */
+.ProductPageBanner
+{
+/*
+	box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-webkit-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-moz-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+*/
+
+	width:600px;
+}
+
+.ProductTitle
+{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.BannerDetailContainer
+{
+	margin-left: 50px;
+	font:12px/1.231 sans-serif;
+}
+
+h1
+{
+	font-size: 1.5em;
+}
+
+
+.BannerDescription
+{
+	color:#444444;
+	margin-top: 20px;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	font-size:1.5em;
+	line-height:1.3em;
+	letter-spacing: 0.05em;
+}
+
+.AppStoreButton
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/App-Store.png) no-repeat 50% 0;
+	display: block;
+	height: 100px;
+	width: 300px;
+}
+
+.AppStoreButton:hover
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/App-Store.png) no-repeat 50% 100%;
+}
+
+.MacAppStoreButton
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/MacAppStoreButton.png) no-repeat 50% 0;
+	display: block;
+	height: 100px;
+	width: 300px;
+}
+
+.MacAppStoreButton:hover
+{
+	background: url(https://s3.amazonaws.com/RogueSheepComMedia/MacAppStoreButton.png) no-repeat 50% 100%;
+}
+
+
+
+/* GALLERY */
+.Gallery
+{
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/gallery_background.jpg) repeat bottom;
+	position:relative;
+	height: 110px;
+	overflow: hidden;
+	width:86%;
+	margin-left: 7%;
+
+	-moz-box-shadow: inset 0 0 10px rgba(0,0,0, 0.8);
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0, 0.8);
+	box-shadow: inset 0 0 10px rgba(0,0,0, 0.8);
+
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.GalleryShadow
+{
+/* gradients across all browsers */
+	background: #8b8b8b; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9FF', endColorstr='#7a7a7a00'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(transparent)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #a9a9a9,  transparent); /* for firefox 3.6+ */
+
+	
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+
+.rsGalleryThumbDiv
+{
+	position:relative;
+	width: 114px;
+	height: 100%;
+	float: left;
+}
+
+.rsGalleryThumbDiv > p
+{
+	color: white;
+	text-align: center;
+	font-size: 0.9em;
+	text-shadow: none;
+}
+
+
+.rsGalleryThumbDiv > img
+{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0%;
+	right: 0%;
+	bottom: 0px;
+	display:block;
+	
+	padding: 3px;
+	border-style: solid;
+	background-color: white;
+
+
+	box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-webkit-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-moz-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+}
+
+
+/* The gallery has this child element which holds the showcase image and close button and also contains the media container which holds the thumbnails*/
+.rsGalleryShowcaseArea
+{
+	position:absolute;
+	bottom: 120px;
+	width: 100%;
+}
+
+.rsGalleryShowcaseImage
+{
+	/* margin:auto and display:block to have it centered */
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 6px;
+/*
+	border-style: solid;
+	border-width: 6px;
+*/
+	background-color: white;
+
+	box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-webkit-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+	-moz-box-shadow:inset 0px 0px 3px #444545, 0px 3px 5px #111111;
+}
+
+div.rsGallery-CloseButton
+{
+	/* these should be configurable by user */
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/close.png) no-repeat;
+	background-position:20px 30px;
+	position: absolute;
+	width: 71px;
+	height: 70px;
+}
+
+div.rsGallery-NextNav
+{
+	/* these should be configurable by user */
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	background-position:-30px 0;
+	position: absolute;
+	right:11px;
+	bottom: 40px;
+	width: 30px;
+	height: 30px;
+	
+}
+
+div.rsGallery-PrevNav
+{
+	/* these should be configurable by user */
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	position: absolute;
+	left:11px;
+	bottom: 40px;
+	width: 30px;
+	height: 30px;
+}
+
+.rsGalleryVideoIndicatorDiv
+{
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/VideoIndicator.png) no-repeat;
+	position: absolute;
+	width:37px;
+	height:37px;
+	right: 0px;
+	top: 10px;
+}
+
+/* SCREENSHOT WIDGET */
+.iPadScreenshotWidget
+{
+	position: absolute;
+	top:-40px;
+	right:65px;
+	width: 317px;
+	height: 400px; /* 364*/
+}
+
+.iPadScreenshotWidget #screenshotContainer 
+{
+    position:absolute;
+	top: 52px;
+	left: 63px;
+	background-color: black;
+}
+
+.iPhoneScreenshotWidget
+{
+	position: absolute;
+	top:-40px;
+	right:-30px;
+	width: 320px;
+	height: 620px; 
+	z-index: 300; /*Make sure it is above next section so video button works*/
+}
+
+.iPhoneScreenshotWidget #screenshotContainer
+{
+    position:absolute;
+	top: 115px;
+	left: 28px;
+	z-index: 15;
+	background-color: black;
+}
+
+.MacScreenshotWidget
+{
+	position: absolute;
+	top:140px;
+	right:-80px;
+	width: 600px;
+	height: 600px; /* 364*/
+}
+
+.MacScreenshotWidget #screenshotContainer 
+{
+    position:absolute;
+	top: 56px;
+	left: 28px;
+/* 500px screenshot
+	top: 59px;
+	left: 38px;
+*/
+	background-color: black;
+}
+
+.PageControlDot
+{
+	border-style: solid;
+	height: 12px;
+	width: 12px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin: 5px;
+	background-color: white;
+	float: left;
+}				
+
+#screenshotNivoSlider 
+{
+    width:263px; /* Change this to your images width */
+    height:394px; /* Change this to your images height */
+    background:url(https://s3.amazonaws.com/RogueSheepComMedia/loading.gif) no-repeat 50% 50%;
+}
+
+#screenshotNivoSlider img 
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+
+#screenshotNivoSlider a 
+{
+    border:0;
+    display:block;
+}
+
+.iPadScreenshotWidget .nivo-controlNav 
+{
+	position:absolute;
+	left: 100px;
+	bottom:-85px;
+}
+
+
+.iPhoneScreenshotWidget .nivo-controlNav 
+{
+	position:absolute;
+/* 	left: 110px; */
+	bottom:-130px;
+}
+
+.MacScreenshotWidget .nivo-controlNav 
+{
+	position:absolute;
+  	left: 210px;  
+	bottom:-200px;
+}
+
+.nivo-controlNav a 
+{
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active 
+{
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a 
+{
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav 
+{
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav 
+{
+	left:15px;
+}
+
+/* PRODUCT FEATURES AREA */
+
+.ProductFeaturesArea
+{
+/* 	color:	#6b664f; */  /* Brown Text Color */
+	color: #2E2E2E;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	
+/*Table
+	clear: left;
+	clear: right;
+*/	display: table;
+border-spacing: 50px;
+/* width: 100%; */
+}
+
+.ProductFeaturesArea>div
+{
+		
+
+/* 	position: relative; */
+	margin-top: 30px;
+
+	/* This is a trick to cause this div to have height equal to the floated content inside it*/
+/*table
+	overflow: auto;
+	width: 100%
+*/	display: table-row;
+}
+
+
+
+.ProductFeaturesArea>div>div
+{
+/* 	float: left; */
+}
+
+.ProductFeaturesArea p
+{
+	margin-top: 15px;
+	font-size: 0.8em;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #EEEEEE;
+}
+
+.ProductFeaturesArea  li 
+{
+	text-align: left;
+	font-size: 0.7em;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #EEEEEE;
+}
+
+.firstColumn
+{
+/*table
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+*/	display: table-cell;
+	vertical-align: middle;
+	padding-left: 5%;
+/* 	padding-bottom: 50px; */
+	text-align: center;
+
+}
+
+.ProductFeaturesArea span
+{
+	padding-top: 40px;
+}
+
+.secondColumn
+{
+/*table
+	float: right;
+	width: 40%;
+	margin-right: 10%;
+
+	vertical-align: middle;
+	display: table-cell;
+*/	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-right: 5%;
+}
+
+#zoom
+{
+	z-index: 100;
+}
+
+/*
+.firstColumn img
+{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.secondColumn img
+{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+*/
+

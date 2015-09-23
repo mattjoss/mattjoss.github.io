@@ -1,0 +1,168 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Welcome to RogueSheep</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/homeStyle.css?v=2">
+
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body id='all'>
+
+  <div id="container">
+    <header>
+		<div id="headerDiv"> 
+			<ul id="navbar">
+				<li>
+					<a href="http://www.roguesheep.com" title="Home">
+						<span id='navbar-sheep' class='navBarItem navbar-selected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="products.html" title="Products">
+						<span id='navbar-products' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="support.html" title="Support">
+						<span id='navbar-support' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.roguesheep.com" title="Blog">
+						<span id='navbar-blog' class='navBarItem navbar-deselected'></span>
+					</a>
+				</li>
+			</ul>
+			<img id="RSBanner" src="https://s3.amazonaws.com/RogueSheepComMedia/RogueSheepLogo_small.png"/>			
+		</div>
+    </header>
+    
+    <div id="main">
+		<div id='contentArea'>
+			<div > 
+				<a href='./instaview.html'>
+					<img id='featured' src='https://s3.amazonaws.com/RogueSheepComMedia/Headline2.png'/>
+					<div class='learnMore'>Learn More</div>
+				</a>
+			</div>
+			<div class='productBoxContainer'>
+				<div id='iPadHeading' class='deviceHeading'>
+					<p>iPad Apps</p>
+				</div>
+				<div id='iPhoneHeading' class='deviceHeading'>
+					<p>iPhone Apps</p>
+				</div>
+				<a href='./touchup.html'>
+					<div id='touchupProductBox' class='productBox'>
+						<!--[if lt IE 8]> <a href='./touchup.html'><![endif]-->
+						<img src='https://s3.amazonaws.com/TouchUpMedia2/smallTouchUpIcon.png'>
+						<!--[if lt IE 8]> </a><![endif]-->
+						<strong>TouchUp</strong>
+						<p>Bring your photos to life</p>
+					</div>
+				</a>
+				<a href='./postage.html'>
+					<div id='postageProductBox' class='productBox'>
+						<!--[if lt IE 8]> <a href='./postage.html'><![endif]-->
+						<img src='https://s3.amazonaws.com/PostageMedia2/smallPostageIcon.png'>
+						<!--[if lt IE 8]> </a><![endif]-->
+						<strong>Postage</strong>
+						<p>Share life on the go</p>
+					</div>
+				</a>
+				<a href='./easyalarms.html'>
+					<div id='easyAlarmProductBox' class='productBox'>
+						<!--[if lt IE 8]> <a href='./easyalarms.html'><![endif]-->
+						<img src='https://s3.amazonaws.com/EasyAlarmsMedia/smallEasyAlarmsIcon.png'>
+						<!--[if lt IE 8]> </a><![endif]-->
+						<strong>Easy Alarms</strong>
+						<p>Set. Skip. Snooze.</p>
+					</div>
+				</a>
+				<a href='./roseglobe.html'>
+					<div id='snoGlobeProductBox' class='productBox'>
+						<!--[if lt IE 8]> <a href='./roseglobe.html'><![endif]-->
+						<img src='https://s3.amazonaws.com/RoseGlobeMedia/smallRoseGlobeIcon.png'>
+						<!--[if lt IE 8]> </a><![endif]-->
+						<strong>RoseGlobe</strong>
+						<p>Showcase, Shake and Share your photos</p>
+					</div>
+				</a>
+				
+			</div>
+		</div>
+    </div>
+    
+    <footer id='footer'>
+		<a href='http://roguesheep.com'>Home</a>
+		<a href='http://twitter.com/roguesheep'>RogueSheep on Twitter</a>
+		<a href='support.html'>Support</a>
+		
+		<a href='http://roguesheep.com'>&copy; 2011 RogueSheep Incorporated</a>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <!-- end concatenated and minified scripts-->
+  
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-360947-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>

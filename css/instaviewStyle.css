@@ -1,0 +1,121 @@
+@import url('productPageStyle.css');
+
+.BannerDescription
+{
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.BannerDetailContainer
+{
+	padding-bottom: 40px;
+}
+
+
+.ProductPageBanner
+{
+	width:360px;
+	height:700px;
+}
+
+.ProductTitle
+{
+	margin-left: 35px;
+	margin-top: 0px;
+}
+
+.rsGalleryShowcaseArea object
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+.AppStoreButton
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#screenshotNivoSlider 
+{
+    width:539px; /* Change this to your images width */
+    height:305px; /* Change this to your images height */
+    
+}
+
+#viewLarger
+{
+	position: absolute;
+	top:560px;
+	left:0px;
+	width: 100%;
+	text-align: center;
+}
+
+#GalleryModeAppStoreButton
+{
+	position: absolute;
+	display: none;
+	top: 20px;
+	right: 15px;
+	display: none;
+}
+
+.Gallery
+{
+	height: 130px;
+}
+
+.rsGalleryThumbDiv > img
+{
+	background-color: transparent;
+	padding: hidden;
+	border-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+
+}
+
+.rsGalleryThumbDiv
+{
+	position:relative;
+	width: 136px;
+	height: 100%;
+	float: left;
+}
+
+.rsGalleryShowcaseImage
+{
+	margin-top: 5px;
+
+	background-color: transparent;
+
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}
+
+h6
+{
+	font-size: 0.8em;
+	font-weight: normal;
+	
+}
+
+#InstaviewTagline
+{
+	width:420px;
+}
+
+#MoreInfo
+{
+	font-size: 1.1em;
+	text-align: center;
+}

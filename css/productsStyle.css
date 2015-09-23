@@ -1,0 +1,41 @@
+@import url('roguesheepStyle.css');
+
+#products
+{
+	display: table;
+	border-bottom-width: 50px;
+}
+
+.productBlock
+{
+	height: 306px;
+	display: table-row;
+}
+
+.productIconArea
+{
+	display: table-cell;
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+}
+
+.productDescriptionArea
+{
+	display: table-cell
+	width: 400px;
+ 	padding-top: 30px; 
+}
+
+.productDescriptionText
+{
+	color:#444444;
+	margin-left: 20px;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	font-size:1.8em;
+	font-weight: bold;
+	line-height:1.3em;
+	letter-spacing: 0.05em;
+
+}
+

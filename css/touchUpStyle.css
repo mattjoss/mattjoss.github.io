@@ -1,0 +1,54 @@
+@import url('productPageStyle.css');
+
+.BannerDescription
+{
+	height: 280px;
+	margin-top: 0px;
+}
+
+.BannerDetailContainer
+{
+	padding-bottom: 40px;
+}
+
+
+.ProductPageBanner
+{
+	width:500px;
+}
+
+.ProductTitle
+{
+	margin-left: 35px;
+	margin-top: 0px;
+}
+
+.rsGalleryShowcaseArea object
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+.AppStoreButton
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#screenshotNivoSlider 
+{
+    width:322px; /* Change this to your images width */
+    height:429px; /* Change this to your images height */
+}
+
+#GalleryModeAppStoreButton
+{
+	position: absolute;
+	display: none;
+	top: 20px;
+	right: 15px;
+	display: none;
+}
