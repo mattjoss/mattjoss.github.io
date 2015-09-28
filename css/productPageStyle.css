@@ -9,6 +9,7 @@ body
 #contentArea
 {
 	position:relative;
+	min-height: 700px;
 /* 	text-shadow:#482914 -1px 0px 3px,#482914 0px 1px 3px,#482914 1px 0px 3px,#482914 0px -1px 3px; */
 }
 
@@ -54,7 +55,7 @@ h1
 
 .AppStoreButton
 {
-	background: url(https://s3.amazonaws.com/RogueSheepComMedia/App-Store.png) no-repeat 50% 0;
+	background: url(./images/shared/App-Store.png) no-repeat 50% 0;
 	display: block;
 	height: 100px;
 	width: 300px;
@@ -62,12 +63,12 @@ h1
 
 .AppStoreButton:hover
 {
-	background: url(https://s3.amazonaws.com/RogueSheepComMedia/App-Store.png) no-repeat 50% 100%;
+	background: url(./images/shared/App-Store.png) no-repeat 50% 100%;
 }
 
 .MacAppStoreButton
 {
-	background: url(https://s3.amazonaws.com/RogueSheepComMedia/MacAppStoreButton.png) no-repeat 50% 0;
+	background: url(./images/shared/MacAppStoreButton.png) no-repeat 50% 0;
 	display: block;
 	height: 100px;
 	width: 300px;
@@ -75,7 +76,7 @@ h1
 
 .MacAppStoreButton:hover
 {
-	background: url(https://s3.amazonaws.com/RogueSheepComMedia/MacAppStoreButton.png) no-repeat 50% 100%;
+	background: url(./images/shared/MacAppStoreButton.png) no-repeat 50% 100%;
 }
 
 
@@ -83,7 +84,7 @@ h1
 /* GALLERY */
 .Gallery
 {
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/gallery_background.jpg) repeat bottom;
+	background:url(./images/shared/gallery_background.jpg) repeat bottom;
 	position:relative;
 	height: 110px;
 	overflow: hidden;
@@ -185,7 +186,7 @@ h1
 div.rsGallery-CloseButton
 {
 	/* these should be configurable by user */
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/close.png) no-repeat;
+	background:url(./images/shared/close.png) no-repeat;
 	background-position:20px 30px;
 	position: absolute;
 	width: 71px;
@@ -195,7 +196,7 @@ div.rsGallery-CloseButton
 div.rsGallery-NextNav
 {
 	/* these should be configurable by user */
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	background:url(./images/shared/arrows.png) no-repeat;
 	background-position:-30px 0;
 	position: absolute;
 	right:11px;
@@ -208,7 +209,7 @@ div.rsGallery-NextNav
 div.rsGallery-PrevNav
 {
 	/* these should be configurable by user */
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	background:url(./images/shared/arrows.png) no-repeat;
 	position: absolute;
 	left:11px;
 	bottom: 40px;
@@ -218,7 +219,7 @@ div.rsGallery-PrevNav
 
 .rsGalleryVideoIndicatorDiv
 {
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/VideoIndicator.png) no-repeat;
+	background:url(./images/shared/VideoIndicator.png) no-repeat;
 	position: absolute;
 	width:37px;
 	height:37px;
@@ -250,11 +251,30 @@ div.rsGallery-PrevNav
 	top:-40px;
 	right:-30px;
 	width: 320px;
-	height: 620px; 
+	height: 700px; 
 	z-index: 300; /*Make sure it is above next section so video button works*/
 }
 
 .iPhoneScreenshotWidget #screenshotContainer
+{
+    position:absolute;
+	top: 115px;
+	left: 28px;
+	z-index: 15;
+	background-color: black;
+}
+
+.iPhone5ScreenshotWidget
+{
+	position: absolute;
+	top:-40px;
+	right:-30px;
+	width: 320px;
+	height: 700px; 
+	z-index: 300; /*Make sure it is above next section so video button works*/
+}
+
+.iPhone5ScreenshotWidget #screenshotContainer
 {
     position:absolute;
 	top: 115px;
@@ -301,7 +321,7 @@ div.rsGallery-PrevNav
 {
     width:263px; /* Change this to your images width */
     height:394px; /* Change this to your images height */
-    background:url(https://s3.amazonaws.com/RogueSheepComMedia/loading.gif) no-repeat 50% 50%;
+    background:url(./images/shared/loading.gif) no-repeat 50% 50%;
 }
 
 #screenshotNivoSlider img 
@@ -318,6 +338,7 @@ div.rsGallery-PrevNav
     display:block;
 }
 
+
 .iPadScreenshotWidget .nivo-controlNav 
 {
 	position:absolute;
@@ -329,8 +350,20 @@ div.rsGallery-PrevNav
 .iPhoneScreenshotWidget .nivo-controlNav 
 {
 	position:absolute;
-/* 	left: 110px; */
+	left: 78px;
 	bottom:-130px;
+}
+
+.iPhone5ScreenshotWidget .nivo-controlNav 
+{
+	position:absolute;
+	left: 78px;
+	bottom:-130px;
+}
+
+.iPhone5ScreenshotWidget #screenshotNivoSlider
+{
+    height:467px; /* Height for iPhone 5 template */	
 }
 
 .MacScreenshotWidget .nivo-controlNav 
@@ -345,7 +378,7 @@ div.rsGallery-PrevNav
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/bullets.png) no-repeat;
+	background:url(./images/shared/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -361,7 +394,7 @@ div.rsGallery-PrevNav
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/arrows.png) no-repeat;
+	background:url(./images/shared/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }

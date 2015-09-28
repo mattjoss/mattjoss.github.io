@@ -13,7 +13,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Welcome to RogueSheep</title>
+  <title>RogueSheep Products</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -26,8 +26,7 @@
 
 
   <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="css/homeStyle.css?v=2">
-
+  <link rel="stylesheet" href="css/productsStyle.css?v=2">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -42,96 +41,106 @@
   <div id="container">
     <header>
 		<div id="headerDiv"> 
-			<ul id="navbar">
-				<li>
-					<a href="http://www.roguesheep.com" title="Home">
-						<span id='navbar-sheep' class='navBarItem navbar-selected'></span>
-					</a>
-				</li>
-				<li>
-					<a href="products.html" title="Products">
-						<span id='navbar-products' class='navBarItem navbar-deselected'></span>
-					</a>
-				</li>
-				<li>
-					<a href="support.html" title="Support">
-						<span id='navbar-support' class='navBarItem navbar-deselected'></span>
-					</a>
-				</li>
-				<li>
-					<a href="http://blog.roguesheep.com" title="Blog">
-						<span id='navbar-blog' class='navBarItem navbar-deselected'></span>
-					</a>
-				</li>
-			</ul>
-			<img id="RSBanner" src="https://s3.amazonaws.com/RogueSheepComMedia/RogueSheepLogo_small.png"/>			
+			<a href="./index.html" title="Home">
+				<img id="RSBanner" src="./images/MattJoss.png"/>			
+			</a>
 		</div>
     </header>
     
     <div id="main">
 		<div id='contentArea'>
-			<div > 
-				<a href='./instaview.html'>
-					<img id='featured' src='https://s3.amazonaws.com/RogueSheepComMedia/Headline2.png'/>
-					<div class='learnMore'>Learn More</div>
+		<!--[if lt IE 8]> 
+		<p id="IE7Warning"><a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie">Internet Explorer 8</a> or greater is required to view this page correctly.  <br/>It is even better in <a href="http:/www.mozilla.com/">Firefox</a>, <a href="http:/www.google.com/chrome/">Chrome</a> or <a href="http:/www.apple.com/safari/">Safari</a></p>
+		 <![endif]-->
+			<div id='products'>
+				<a class='productBlock' href="./battlekasters.html">
+						<div class='productIconArea' style='background:url(./images/battlekasters/battlekastersIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='./images/battlekasters/battlekastersTitle.png'/>
+								<div class='productDescriptionText'>iBeacon based iPhone game</div>
+						</div>
 				</a>
-			</div>
-			<div class='productBoxContainer'>
-				<div id='iPadHeading' class='deviceHeading'>
-					<p>iPad Apps</p>
-				</div>
-				<div id='iPhoneHeading' class='deviceHeading'>
-					<p>iPhone Apps</p>
-				</div>
-				<a href='./touchup.html'>
-					<div id='touchupProductBox' class='productBox'>
-						<!--[if lt IE 8]> <a href='./touchup.html'><![endif]-->
-						<img src='https://s3.amazonaws.com/TouchUpMedia2/smallTouchUpIcon.png'>
-						<!--[if lt IE 8]> </a><![endif]-->
-						<strong>TouchUp</strong>
-						<p>Bring your photos to life</p>
+				<a class='productBlock' href="./Momento.html">
+						<div class='productIconArea' style='background:url(./images/momento/momentoIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='./images/momento/momentoTitle.png'/>
+								<div class='productDescriptionText'>Beacon based content collection and sharing<p>(Did not ship)</p></div>
+						</div>
+				</a>
+				<a class='productBlock' href="./Mixby.html">
+						<div class='productIconArea' style='background:url(./images/mixby/mixbyIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='./images/mixby/mixbyTitle.png'/>
+								<div class='productDescriptionText'>Location based content iPhone app</div>
+						</div>
+				</a>
+				<a class='productBlock' href="./Fonograf.html">
+						<div class='productIconArea' style='background:url(./images/fonograf/fonografIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='./images/fonograf/fonografTitle.png'/>
+								<div class='productDescriptionText'>Find local concerts and band info in your area</div>
+						</div>
+				</a>
+				<a class='productBlock' href="./GhostPatrol.html">
+						<div class='productIconArea' style='background:url(./images/ghostPatrol/ghostPatrolIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='./images/ghostPatrol/ghostPatrolTitle.png'/>
+								<div class='productDescriptionText'>Ghost capture game using gyroscope</div>
+						</div>
+				</a>
+				<a class='productBlock' href="./instaview.html">
+						<div class='productIconArea' style='background:url(https://s3.amazonaws.com/InstaviewMedia/InstaviewIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='https://s3.amazonaws.com/InstaviewMedia/InstaviewTitle.png'/>
+								<div class='productDescriptionText'>Mac app for viewing Instagram photos</div>
+						</div>
+				</a>
+				<a class='productBlock' href="./touchup.html">
+						<div class='productIconArea' style='background:url(https://s3.amazonaws.com/TouchUpMedia2/TouchUpIcon.png) no-repeat center center;'></div> 
+						<div class='productDescriptionArea'>
+								<img src='https://s3.amazonaws.com/TouchUpMedia2/TouchUpTitle.png'/>
+								<div class='productDescriptionText'>iPad app for editing photos</div>
+						</div>
+				</a>
+	
+
+				<a class='productBlock' href="./espnPassport.html">
+					<div class='productIconArea' style='background:url(./images/espnpassport/espnPassportIcon.png) no-repeat center center;'></div> 
+					<div class='productDescriptionArea'>
+						<img src='./images/espnpassport/espnPassportTitle.png'/>
+						<div class='productDescriptionText'>iPhone app to check in and keep track of games you've attended'</div>
 					</div>
 				</a>
-				<a href='./postage.html'>
-					<div id='postageProductBox' class='productBox'>
-						<!--[if lt IE 8]> <a href='./postage.html'><![endif]-->
-						<img src='https://s3.amazonaws.com/PostageMedia2/smallPostageIcon.png'>
-						<!--[if lt IE 8]> </a><![endif]-->
-						<strong>Postage</strong>
-						<p>Share life on the go</p>
+
+				<a class='productBlock' href="./wordSpin.html">
+					<div class='productIconArea' style='background:url(./images/wordspin/wordspinIcon.png) no-repeat center center;'></div> 
+					<div class='productDescriptionArea'>
+						<img src='./images/wordspin/wordspinTitle.png'/>
+						<div class='productDescriptionText'>iPhone word game</div>
 					</div>
 				</a>
-				<a href='./easyalarms.html'>
-					<div id='easyAlarmProductBox' class='productBox'>
-						<!--[if lt IE 8]> <a href='./easyalarms.html'><![endif]-->
-						<img src='https://s3.amazonaws.com/EasyAlarmsMedia/smallEasyAlarmsIcon.png'>
-						<!--[if lt IE 8]> </a><![endif]-->
-						<strong>Easy Alarms</strong>
-						<p>Set. Skip. Snooze.</p>
+
+				<a class='productBlock' href="./easyalarms.html">
+					<div class='productIconArea' style='background:url(https://s3.amazonaws.com/EasyAlarmsMedia/EasyAlarmsIcon.png) no-repeat center center;'></div> 
+					<div class='productDescriptionArea'>
+						<img src='https://s3.amazonaws.com/EasyAlarmsMedia/EasyAlarmsTitle.png'/>
+						<div class='productDescriptionText'>iOS alarm app</div>
 					</div>
 				</a>
-				<a href='./roseglobe.html'>
-					<div id='snoGlobeProductBox' class='productBox'>
-						<!--[if lt IE 8]> <a href='./roseglobe.html'><![endif]-->
-						<img src='https://s3.amazonaws.com/RoseGlobeMedia/smallRoseGlobeIcon.png'>
-						<!--[if lt IE 8]> </a><![endif]-->
-						<strong>RoseGlobe</strong>
-						<p>Showcase, Shake and Share your photos</p>
+	
+				<a class='productBlock' href="./postage.html">
+					<div class='productIconArea' style='background:url(https://s3.amazonaws.com/PostageMedia2/PostageIcon.png) no-repeat center center;'></div> 
+					<div class='productDescriptionArea'>
+						<img src='https://s3.amazonaws.com/PostageMedia2/PostageTitle.png'/>
+						<div class='productDescriptionText'>iPhone e-card app</div>
 					</div>
 				</a>
-				
-			</div>
-		</div>
+
+			</div> <!-- products -->
+
+		</div> <!-- contentArea -->
     </div>
     
-    <footer id='footer'>
-		<a href='http://roguesheep.com'>Home</a>
-		<a href='http://twitter.com/roguesheep'>RogueSheep on Twitter</a>
-		<a href='support.html'>Support</a>
-		
-		<a href='http://roguesheep.com'>&copy; 2011 RogueSheep Incorporated</a>
-
-    </footer>
   </div> <!--! end of #container -->
 
 
@@ -150,6 +159,10 @@
     <script src="js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
+
+  <!-- yui profiler and profileviewer - remove for production -->
+  <!-- end profiling code -->
+
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->

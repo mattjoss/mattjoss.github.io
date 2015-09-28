@@ -47,7 +47,7 @@ strong {
 #header {
 	border: 1px solid #000000;
 	background-repeat:no-repeat;
- 	background-image: url(https://s3.amazonaws.com/RogueSheepComMedia/HeaderLight.png); 
+ 	background-image: url(./images/shared/HeaderLight.png); 
 /*
 	background-image: url(images/header_bg.jpg);
 	background-repeat: repeat-x;
@@ -97,7 +97,7 @@ strong {
 
 	background-repeat: repeat-x;
 /* 	background-image: url(images/content_bg.jpg); */
-	background:url(https://s3.amazonaws.com/RogueSheepComMedia/content_background.jpg) repeat;
+	background:url(./images/shared/content_background.jpg) repeat;
 	min-height: 900px;
 	
 	padding-top: 2px;

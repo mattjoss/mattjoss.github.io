@@ -1,0 +1,14 @@
+@import url('productPageStyle.css');
+
+.BannerDescription
+{
+	height: 300px;
+	margin-top: 10px;
+}
+
+
+h1
+{
+	font-size: 1.3em;
+}
+
