@@ -28,7 +28,7 @@
 	margin: auto;
 	width: 922px;
 	background-repeat:no-repeat;
- 	background-image: url(./images/shared/HeaderLight.png); 
+ 	background-image: url(../images/shared/HeaderLight.png); 
 }
 
 #navbar
@@ -149,7 +149,7 @@ body
 {
 /* 	background:url(../images/PaperBackground.png) repeat; */
 /* 	background:url(../images/pattern_bg.jpg) repeat; */
-	background:url(./images/shared/content_background.jpg) repeat;
+	background:url(../images/shared/content_background.jpg) repeat;
 	width: 922px;
 	margin: 0px auto;
 	-moz-border-radius: 15px;

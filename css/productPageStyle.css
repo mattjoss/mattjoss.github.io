@@ -55,7 +55,7 @@ h1
 
 .AppStoreButton
 {
-	background: url(./images/shared/App-Store.png) no-repeat 50% 0;
+	background: url(../images/shared/App-Store.png) no-repeat 50% 0;
 	display: block;
 	height: 100px;
 	width: 300px;
@@ -63,12 +63,12 @@ h1
 
 .AppStoreButton:hover
 {
-	background: url(./images/shared/App-Store.png) no-repeat 50% 100%;
+	background: url(../images/shared/App-Store.png) no-repeat 50% 100%;
 }
 
 .MacAppStoreButton
 {
-	background: url(./images/shared/MacAppStoreButton.png) no-repeat 50% 0;
+	background: url(../images/shared/MacAppStoreButton.png) no-repeat 50% 0;
 	display: block;
 	height: 100px;
 	width: 300px;
@@ -76,7 +76,7 @@ h1
 
 .MacAppStoreButton:hover
 {
-	background: url(./images/shared/MacAppStoreButton.png) no-repeat 50% 100%;
+	background: url(../images/shared/MacAppStoreButton.png) no-repeat 50% 100%;
 }
 
 
@@ -84,7 +84,7 @@ h1
 /* GALLERY */
 .Gallery
 {
-	background:url(./images/shared/gallery_background.jpg) repeat bottom;
+	background:url(../images/shared/gallery_background.jpg) repeat bottom;
 	position:relative;
 	height: 110px;
 	overflow: hidden;
@@ -186,7 +186,7 @@ h1
 div.rsGallery-CloseButton
 {
 	/* these should be configurable by user */
-	background:url(./images/shared/close.png) no-repeat;
+	background:url(../images/shared/close.png) no-repeat;
 	background-position:20px 30px;
 	position: absolute;
 	width: 71px;
@@ -196,7 +196,7 @@ div.rsGallery-CloseButton
 div.rsGallery-NextNav
 {
 	/* these should be configurable by user */
-	background:url(./images/shared/arrows.png) no-repeat;
+	background:url(../images/shared/arrows.png) no-repeat;
 	background-position:-30px 0;
 	position: absolute;
 	right:11px;
@@ -209,7 +209,7 @@ div.rsGallery-NextNav
 div.rsGallery-PrevNav
 {
 	/* these should be configurable by user */
-	background:url(./images/shared/arrows.png) no-repeat;
+	background:url(../images/shared/arrows.png) no-repeat;
 	position: absolute;
 	left:11px;
 	bottom: 40px;
@@ -219,7 +219,7 @@ div.rsGallery-PrevNav
 
 .rsGalleryVideoIndicatorDiv
 {
-	background:url(./images/shared/VideoIndicator.png) no-repeat;
+	background:url(../images/shared/VideoIndicator.png) no-repeat;
 	position: absolute;
 	width:37px;
 	height:37px;
@@ -321,7 +321,7 @@ div.rsGallery-PrevNav
 {
     width:263px; /* Change this to your images width */
     height:394px; /* Change this to your images height */
-    background:url(./images/shared/loading.gif) no-repeat 50% 50%;
+    background:url(../images/shared/loading.gif) no-repeat 50% 50%;
 }
 
 #screenshotNivoSlider img 
@@ -378,7 +378,7 @@ div.rsGallery-PrevNav
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(./images/shared/bullets.png) no-repeat;
+	background:url(../images/shared/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -394,7 +394,7 @@ div.rsGallery-PrevNav
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(./images/shared/arrows.png) no-repeat;
+	background:url(../images/shared/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }
