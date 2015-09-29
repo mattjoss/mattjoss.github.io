@@ -152,6 +152,7 @@ body
 	background:url(../images/shared/content_background.jpg) repeat;
 	width: 922px;
 	margin: 0px auto;
+	margin-bottom: 50px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
