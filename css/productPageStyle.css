@@ -283,6 +283,23 @@ div.rsGallery-PrevNav
 	background-color: black;
 }
 
+.rotatediPhoneScreenshotWidget
+{
+	position: relative;
+	width: 700px;
+	height: 320px; 
+	margin: 10px auto;
+	z-index: 300; /*Make sure it is above next section so video button works*/
+}
+
+.rotatediPhoneScreenshotWidget #screenshotContainer
+{
+    position:absolute;
+	top: 28px;
+	left: 115px;
+	z-index: 15;
+	background-color: black;
+}
 .MacScreenshotWidget
 {
 	position: absolute;
@@ -304,6 +321,7 @@ div.rsGallery-PrevNav
 	background-color: black;
 }
 
+
 .PageControlDot
 {
 	border-style: solid;
@@ -322,6 +340,12 @@ div.rsGallery-PrevNav
     width:263px; /* Change this to your images width */
     height:394px; /* Change this to your images height */
     background:url(../images/shared/loading.gif) no-repeat 50% 50%;
+}
+
+.rotatediPhoneScreenshotWidget #screenshotNivoSlider
+{
+    width:394px; /* Change this to your images width */
+    height:263px; /* Change this to your images height */
 }
 
 #screenshotNivoSlider img 
@@ -359,6 +383,13 @@ div.rsGallery-PrevNav
 	position:absolute;
 	left: 78px;
 	bottom:-130px;
+}
+
+.rotatediPhoneScreenshotWidget .nivo-controlNav 
+{
+	position:absolute;
+	left: 150px;
+	bottom:-50px;
 }
 
 .iPhone5ScreenshotWidget #screenshotNivoSlider
@@ -516,3 +547,10 @@ border-spacing: 50px;
 }
 */
 
+#iPhoneRotated
+{
+	position: relative;
+	top: -151px;
+	left: 154px;
+	transform: rotate(90deg);
+}

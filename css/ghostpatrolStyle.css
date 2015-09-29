@@ -1,0 +1,23 @@
+@import url('productPageStyle.css');
+
+.BannerDescription
+{
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+.iPhoneScreenshotWidget .nivo-controlNav 
+{
+	left: 78px;
+}
+
+h1
+{
+	font-size: 1.3em;
+}
+
+.AppStoreButton
+{
+	margin-top: 20px;
+}
